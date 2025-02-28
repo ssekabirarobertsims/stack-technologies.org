@@ -1,0 +1,539 @@
+/*  */
+.spinner-component-wrapper {
+    min-height: 100vh;
+    width: min(100%, 100%);
+    background-color: #fff;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* border: 1px solid red; */
+    z-index: 2;
+}
+.spinner {
+    position: relative;
+    width: 15.7px;
+    height: 15.7px;
+ }
+ 
+ .spinner div {
+    animation: spinner-4t3wzl 1.875s infinite backwards;
+    background-color: hsl(273, 100%, 50%);
+    border-radius: 50%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+ }
+ 
+ .spinner div:nth-child(1) {
+    animation-delay: 0.15s;
+    background-color: rgba(140, 0, 255, .9);
+ }
+ 
+ .spinner div:nth-child(2) {
+    animation-delay: 0.3s;
+    background-color: rgba(140, 0, 255, .8);
+ }
+ 
+ .spinner div:nth-child(3) {
+    animation-delay: 0.45s;
+    background-color: rgba(140, 0, 255, .7);
+ }
+ 
+ .spinner div:nth-child(4) {
+    animation-delay: 0.6s;
+    background-color: rgba(140, 0, 255, .6);
+ }
+ 
+ .spinner div:nth-child(5) {
+    animation-delay: 0.75s;
+    background-color: rgba(140, 0, 255, .5);
+ }
+ 
+ @keyframes spinner-4t3wzl {
+    0% {
+       transform: rotate(0deg) translateY(-200%);
+    }
+ 
+    60%, 100% {
+       transform: rotate(360deg) translateY(-200%);
+    }
+ }
+
+/*  */
+section[class="organization-contact-page"] {
+    min-height: 90vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+    gap: 1em;
+    flex-grow: 1;
+}
+section[class="organization-contact-page"] div[class="organization-contact-page-content"] {
+    min-height: 80vh;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+    gap: 1em;
+}
+section[class="organization-contact-page"] div[class="organization-contact-page-content"] > form {
+    min-height: 70vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+    gap: 1em;
+}
+section[class="organization-contact-page"] div[class="organization-contact-page-content"] > form :where(input) {
+    height: 3.5em;
+    width: min(100%, 50em);
+    border: 1px solid hsl(0, 0%, 60%);
+    border-radius: .2em;
+}
+section[class="organization-contact-page"] div[class="organization-contact-page-content"] > form :where(textarea) {
+    height: 20em;
+    width: min(100%, 50em);
+    border: 1px solid hsl(0, 0%, 60%);
+    field-sizing: content;
+    border-radius: .5em;
+}
+section[class="organization-contact-page"] div[class="organization-contact-page-content"] > form :where(button) {
+    height: 3em;
+    width: 12em;
+    border: none;
+    border-radius: .3em;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+/*  */
+article[class="organization-skills-showcase-component"] {
+    min-height: 30em;
+    width: min(100%, 100%);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+}
+article[class="organization-skills-showcase-component"] h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    max-width: 30em;
+    text-align: center;
+}
+article[class="organization-skills-showcase-component"] div {
+    min-height: 20em;
+    width: min(100%, 100%);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+article[class="organization-skills-showcase-component"] div :is(article) {
+    min-height: 20em;
+    width: min(100%, 22em);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    flex-grow: 1;
+    -webkit-box-shadow: 0 3px 6px -2px #bdbdbd;
+    -moz-box-shadow: 0 3px 6px -2px #bdbdbd;
+    box-shadow: 0 3px 6px -2px #bdbdbd;
+    position: relative;
+    background-color: #fff;
+}
+article[class="organization-skills-showcase-component"] div :is(article) > h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--primary-color);
+    line-height: 1.1em;
+    max-width: 30em;
+    text-align: center;
+}
+article[class="organization-skills-showcase-component"] div :is(article) > p {
+    font-size: .9em;
+    font-weight: normal;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    max-width: 25em;
+    text-align: center;
+}
+
+/*  */
+article[class="testimonials-component"] {
+    min-height: 20em;
+    width: min(100%, 100%);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+article[class="testimonials-component"] h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    max-width: 30em;
+    text-align: center;
+}
+article[class="testimonials-component"] div {
+    min-height: 20em;
+    width: min(100%, 100%);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 3em;
+}
+article[class="testimonials-component"] div :is(article) {
+    min-height: 15em;
+    width: min(100%, 22em);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0em;
+    flex-grow: 1;
+    -webkit-box-shadow: 0 3px 6px -2px #bdbdbd;
+    -moz-box-shadow: 0 3px 6px -2px #bdbdbd;
+    box-shadow: 0 3px 6px -2px #bdbdbd;
+    position: relative;
+    background-color: #fff;
+}
+article[class="testimonials-component"] div :is(article)::before {
+    content: "";
+    height: 15em;
+    width: 37em;
+    border: 1px solid hsl(0, 0%, 90%);
+    position: absolute;
+    top: -2em;
+    right: -1em;
+    z-index: -1;
+    border-bottom: none;
+}
+article[class="testimonials-component"] div :is(article) > div[class="wrapper"] {
+    min-height: 12em;
+    width: min(90%, 90%);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0em
+}
+article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-client-content"] {
+    min-height: 4em;
+    width: min(100%, 100%);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 1em;
+}
+article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-client-content"] 
+img {
+    height: 4em;
+    width: 4em;
+    border-radius: 100%;
+}
+article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-client-content"] 
+aside {
+    min-height: 4em;
+    width: 20em;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: .1em;
+    flex-grow: 1;
+}
+article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-client-content"] 
+aside :is(span) {
+    font-weight: normal;
+    color: hsl(0, 0%, 30%);
+    font-size: .9em;
+}
+article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-content"] {
+    min-height: 8em;
+    width: min(100%, 100%);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-content"] > p {
+    font-weight: normal;
+    color: hsl(0, 0%, 30%);
+    font-size: .9em;
+}
+
+/*  */
+article[class="advert-component"] {
+    min-height: 20em;
+    width: min(100%, 100%);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    background-image: url(../../photos/medium-shot-people-working-together_23-2150433402.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    border-radius: .5em;
+    overflow: hidden;
+}
+article[class="advert-component"] > div {
+    min-height: 20em;
+    width: min(100%, 100%);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgba(71,75,255,0.5)
+}
+article[class="advert-component"] > div > aside {
+    min-height: 18em;
+    width: min(90%, 90%);
+    /* border: 1px solid red */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+article[class="advert-component"] > div > aside :where(h1) {
+    font-size: 2em;
+    font-weight: calc(270 + 290);
+    color: hsl(0, 0%, 100%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 30em;
+}
+article[class="advert-component"] > div > aside :where(p) {
+    font-size: .9em;
+    font-weight: calc(270 + 290);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    line-height: 1.1em;
+    max-width: 50em;
+}
+article[class="advert-component"] > div > aside :where(article) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+article[class="advert-component"] > div > aside :where(article) > a {
+    min-height: 1em;
+    min-width: 1em;
+}
+article[class="advert-component"] > div > aside :where(article) > a :is(button) {
+    height: 4em;
+    width: 10em;
+    border: none;
+    border-radius: .1em;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+article[class="advert-component"] > div > aside :where(article) > button {
+    height: 4em;
+    width: 10em;
+    border: none;
+    border-radius: .1em;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+/*  */
+section[class="about-organization-page-component"] {
+    min-height: 140vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid rgb(255, 0, 0); */
+    gap: 1em;
+    flex-grow: 1;
+}
+section[class="about-organization-page-component"] > div[class="about-organization-page-component-content"] {
+    min-height: 120vh;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 1em;
+    /* flex-grow: 1; */
+}
+section[class="about-organization-page-component"] > div[class="about-organization-page-component-content"] h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 30em;
+}
+section[class="about-organization-page-component"] > div[class="about-organization-page-component-content"] p {
+    font-size: .9em;
+    font-weight: normal;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    max-width: 80em;
+}
+
+/*  */
+aside[class="dd-menu"] {
+    min-height: 10vh;
+    width: min(100%, 100%);
+    background-color: transparent;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; 
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+div[class="dd-menu"] :is(button[class="dd-menu-button"]) {
+    height: 3em;
+    width: 4em;
+    border: none;
+    color: hsl(0, 0%, 20%);
+    background-color: transparent;
+    /* border: 1px solid red; */
+    font-weight: bolder;
+    font-size: 1.7em;
+    cursor: pointer;
+    display: none;
+    flex-grow: 2;
+}
+div[class="dd-menu"] aside[class="dd-menu-wrapper"] {
+    min-height: 100vh;
+    width: min(0%, 0%);
+    background-color: transparent;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) {
+    min-height: 100vh;
+    width: min(90%, 20em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-left: 1px solid hsl(0, 0%, 85%);
+    gap: 1em;
+}
+div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"] {
+    min-height: 100vh;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 1em;
+    /* border: 1px solid red; */
+}
+div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"]
+ ul {
+    min-height: 28em;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0em;
+    list-style-type: none;
+    /* border: 1px solid red; */
+    flex-grow: 0;
+}
+div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"]
+ ul :where(a) {
+    height: 3em;
+    width: min(100%, 100%);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    list-style-type: none;
+    text-decoration-color: none;
+    text-decoration-line: none;
+    color: hsl(0, 0%, 20%);
+}
+div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"]
+ button {
+    height: 3em;
+    width: min(95%, 95%);
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"]
+ ul :where(a) > li {
+    height: 3em;
+    width: min(95%, 95%);
+    font-weight: calc(220 + 220);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"]
+ ul :where(a):is(:hover, :focus) {
+    background-color: var(--primary-color);
+    color: #fff
+}

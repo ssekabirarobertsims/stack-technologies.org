@@ -1,0 +1,613 @@
+/*  */
+section[class="organization-developers-page"] {
+    min-height: 60vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 0em;
+    flex-grow: 1; 
+}
+section[class="organization-developers-page"] div[class="organization-developers-page-wrapper"] {
+    min-height: 60vh;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 0em;
+    flex-grow: 1;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-page-wrapper"] {
+    min-height: 60vh;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 0em;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] {
+    min-height: 60vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 1em;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    max-width: 30em;
+    text-align: center;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > p {
+    font-size: .9em;
+    font-weight: normal;
+    color: hsl(0, 0%, 20%);
+    text-align: center;
+    line-height: 1.1em;
+    max-width: 70em;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
+div[class="developers-cards-wrapper"] {
+    min-height: 20em;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    gap: 1em;
+    flex-flow: row wrap;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
+div[class="developers-cards-wrapper"] article {
+    height: 20em;
+    width: min(100%, 15em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    gap: 1em;
+    flex-flow: row wrap;
+    position: relative;
+    flex-grow: 1;
+    overflow: hidden;
+    border-radius: .5em;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
+div[class="developers-cards-wrapper"] article :where(img) {
+    height: 100%;
+    width: min(100%, 100%);
+    aspect-ratio: 16/9;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
+div[class="developers-cards-wrapper"] article :where(aside) {
+    height: 7em;
+    width: min(90%, 90%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    gap: 1em;
+    flex-flow: row wrap;
+    position: absolute;
+    bottom: 1em;
+    left: 0px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+    overflow: hidden;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
+div[class="developers-cards-wrapper"] article:where(:hover, :focus) aside {
+    display: flex;
+    transition-behavior: smooth;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
+div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper"] {
+    height: 5em;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    /* border: 1px solid red; */
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
+div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper"] > h1 {
+    font-size: 1.2em;
+    font-weight: calc(200 + 200);
+    color: hsl(0, 0%, 100%);
+    line-height: 1.1em;
+    max-width: 30em;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
+div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper"] > p {
+    font-size: .8em;
+    font-weight: normal;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.1em;
+    max-width: 30em;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
+div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper"] > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+}
+section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
+div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper"] > ul a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*  */
+article[class="developer-card-component"] {
+    min-height: 50vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #eee;
+    gap: 1em;
+    flex-grow: 1;
+}
+article[class="developer-card-component"] > h1[id="tdh"] {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 30em;
+}
+article[class="developer-card-component"] > p[id="tdp"] {
+    font-size: .9em;
+    font-weight: normal;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    max-width: 30em;
+    text-align: center;
+}
+article[class="developer-card-component"] > aside[class="developer-card-component-info"] {
+    min-height: 30vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid red;
+    gap: 1em;
+    /* flex-grow: 1; */
+}
+article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
+:is(p[class="dev-description"]) {
+    font-size: .9em;
+    color:hsl(0, 0%, 20%);
+    max-width: 80em;
+}
+article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
+:is(div[class="profile"]) {
+    min-height: 10vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    gap: 2em;
+}
+article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
+:is(div[class="profile"]) > img {
+    height: 5em;
+    width: 5em;
+    border-radius: 100%;
+}
+article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
+:is(div[class="profile"]) > div {
+    min-height: 10vh;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+    gap: .2em;
+    flex-grow: 1;
+}
+article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
+:is(div[class="profile"]) > div span {
+    font-weight: normal;
+    color:hsl(0, 0%, 20%);
+    font-size: .9em;
+}
+article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
+:is(ul) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    list-style: none;
+    list-style-type: none;
+}
+article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
+:is(ul) > li a {
+    font-size: 1.5em;
+    color:hsl(0, 0%, 20%);
+}
+article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
+:is(button) {
+    height: 3em;
+    width: 12em;
+    border: none;
+    border-radius: .3em;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+/*  */
+section[class="organization-projects-section-component"] {
+    min-height: 70vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 1em;
+    flex-grow: 1;
+}
+section[class="organization-projects-section-component"] div[class="organization-projects-section-component-content-wrapper"] {
+    min-height: 50vh;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 1em;
+    /* flex-grow: 1; */
+}
+section[class="organization-projects-section-component"] div[class="organization-projects-section-component-content-wrapper"] :is(h1) {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 30em;
+}
+section[class="organization-projects-section-component"] div[class="organization-projects-section-component-content-wrapper"] :is(h1[id="oph"]) {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 30em;
+}
+section[class="organization-projects-section-component"] div[class="organization-projects-section-component-content-wrapper"] :is(p[id="ops"]) {
+    font-size: .9em;
+    color:hsl(0, 0%, 20%);
+    max-width: 50em;
+    text-align: center;
+}
+
+/*  */
+
+
+/*  */
+article[class="organization-ratings-component"] {
+    min-height: 5em;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 1em;
+    flex-grow: 1;
+    text-align: center;
+}
+article[class="organization-ratings-component"] > h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 30em;
+}
+article[class="organization-ratings-component"] > p {
+    font-size: .9em;
+    color:hsl(0, 0%, 20%);
+    max-width: 50em;
+}
+article[class="organization-ratings-component"] > div[class="organization-ratings-component-content"] {
+    min-height: 2em;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    gap: 1em;
+}
+article[class="organization-ratings-component"] > div[class="organization-ratings-component-content"] span {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 30em;
+}
+article[class="organization-ratings-component"] > div[class="organization-ratings-component-content"] span strong {
+    color: var(--primary-color);
+}
+
+
+/*  */
+section[class="organization-services-component-page"] {
+    min-height: 130vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 1em;
+    flex-grow: 1;
+}
+section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] {
+    min-height: 120vh;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 1em;
+}
+section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] > h1[id="ocp_h"] {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 30em;
+}
+section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) {
+    min-height: 110vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    /* border: 1px solid red; */
+    gap: 1em;
+}
+section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) 
+article[class="service"] {
+    min-height: 18em;
+    width: min(100%, 20em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid #eee;
+    gap: 1em;
+    flex-grow: 1;
+    border-radius: .5em;
+}
+section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) 
+article[class="service"] > div {
+    min-height: 13em;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 1em;
+}
+section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) 
+article[class="service"] > div h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    max-width: 30em;
+}
+section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) 
+article[class="service"] > div p {
+    font-size: .9em;
+    font-weight: normal;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    max-width: fit-content;
+}
+section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) 
+article[class="service"] > div button {
+    height: 3em;
+    width: 12em;
+    border: none;
+    border-radius: .3em;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+/*  */
+article[class="organization-services-pricing-page-component"] {
+    min-height: 130vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid rgb(0, 255, 191); */
+    gap: 1em;
+    flex-grow: 1;
+}
+aside[class="organization-services-pricing-page-component-content"] {
+    min-height: 120vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 1em;
+    /* flex-grow: 1; */
+}
+aside[class="organization-services-pricing-page-component-content"] h1[id="osp"] {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 30em;
+}
+aside[class="organization-services-pricing-page-component-content"] p[id="osw"] {
+    font-size: .9em;
+    font-weight: normal;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 50em;
+}
+aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] {
+    min-height: 90vh;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    /* border: 1px solid red; */
+    gap: 1em;
+    flex-grow: 1;
+}
+aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) {
+    min-height: 70vh;
+    width: min(100%, 24em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid var(--primary-color);
+    gap: 1em;
+    border-radius: .5em;
+}
+aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"]) {
+    min-height: 85vh;
+    width: min(100%, 24em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 2px solid var(--primary-color);
+    gap: 1em;
+    border-radius: .5em;
+    position: relative;
+}
+/* aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
+    content: "Most Popular";
+    height: 3.5em;
+    width: min(100%, 10em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: .5em;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: -1.5em;
+    left: 7em;
+    color: #fff;
+    font-weight: bolder;
+} */
+aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] {
+    min-height: 100%;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.1em;
+    text-align: center;
+    max-width: 30em;
+}
+aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    flex-direction: column;
+}
+aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] ul > li {
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    font-weight: normal;
+    font-style: normal;
+    color: hsl(0, 0%, 20%);
+}
+aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] a {
+    width: min(100%, 100%);
+}
+aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] a > button {
+    height: 3em;
+    width: min(100%, 100%);
+    border: none;
+    border-radius: .3em;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+aside[class="organization-services-pricing-page-component-content"] 
+div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"]) div[class="pricing-tag-wrapper"] a > button {
+    height: 3em;
+    width: min(100%, 100%);
+    border: none;
+    border-radius: .3em;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
