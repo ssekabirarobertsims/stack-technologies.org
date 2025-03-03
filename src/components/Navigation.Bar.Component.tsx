@@ -25,7 +25,7 @@ const NavigationBarComponent: React.FC = () => {
       href: "/#about-organization" as string,
     },
     {
-      id: uuid() as string,
+      id: uuid() as string, 
       value: "Team" as string,
       href: "/#organization-developers-team" as string,
     },

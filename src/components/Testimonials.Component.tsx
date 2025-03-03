@@ -20,13 +20,12 @@ const TestimonialsComponent: React.FC = () => {
               </div>
               <div className="testimonial-content">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  reiciendis cupiditate quam, voluptate, dicta excepturi illum
-                  perspiciatis soluta amet modi expedita architecto eius quod!
-                  Qui pariatur accusamus hic harum maiores ipsam ea cum
-                  veritatis libero iure laboriosam sapiente facere est
-                  voluptatum ex ab quidem ad labore amet sed eos, sunt odit
-                  totam. Vero vel cum laboriosam eum illum pariatur eaque?
+                  I am very happy with the services provided by Stack
+                  Technologies. They have been very professional and have
+                  delivered the best results for my business needs and
+                  requirements. I would definitely recommend Stack Technologies
+                  to anyone looking for a reliable and professional web
+                  development company to work with.
                 </p>
               </div>
             </div>
@@ -42,13 +41,11 @@ const TestimonialsComponent: React.FC = () => {
               </div>
               <div className="testimonial-content">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  reiciendis cupiditate quam, voluptate, dicta excepturi illum
-                  perspiciatis soluta amet modi expedita architecto eius quod!
-                  Qui pariatur accusamus hic harum maiores ipsam ea cum
-                  veritatis libero iure laboriosam sapiente facere est
-                  voluptatum ex ab quidem ad labore amet sed eos, sunt odit
-                  totam. Vero vel cum laboriosam eum illum pariatur eaque?
+                 Stack Technologies has been a great partner for my business. They
+                 have been very professional and have delivered the best results
+                  for my business needs and requirements. I would definitely
+                  recommend Stack Technologies to anyone looking for a reliable
+                  and professional web development company to work with.
                 </p>
               </div>
             </div>

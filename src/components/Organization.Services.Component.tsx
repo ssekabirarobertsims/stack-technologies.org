@@ -6,9 +6,9 @@ import { FaServer } from "react-icons/fa";
 const OrganizationServicesComponent: React.FC = () => {
   return (
     <>
+    <br />
       <article
         className="organization-services-component"
-        id="about-organization"
       >
         <div className="organization-service">
           <h1>
@@ -16,8 +16,8 @@ const OrganizationServicesComponent: React.FC = () => {
           </h1>
           <h2>Frontend development</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-            omnis.
+            We create responsive and user-friendly websites responsive iu designs that are easy to
+            navigate for the user.
           </p>
         </div>
         <div className="organization-service">
@@ -26,8 +26,8 @@ const OrganizationServicesComponent: React.FC = () => {
           </h1>
           <h2>Database management</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-            omnis.
+            We manage databases and ensure that data is stored and retrieved
+            efficiently and effectively.
           </p>
         </div>
         <div className="organization-service">
@@ -36,8 +36,8 @@ const OrganizationServicesComponent: React.FC = () => {
           </h1>
           <h2>Backend development</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-            omnis.
+            We develop server-side applications that are robust and scalable to
+            meet the needs of your business.
           </p>
         </div>
         <div className="organization-service">

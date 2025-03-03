@@ -28,11 +28,11 @@ section[class="organization-developers-section-component"] > div[class="organiza
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     gap: 0em;
 }
 section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] {
-    min-height: 60vh;
+    min-height: 70vh;
     width: min(100%, 100%);
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@ section[class="organization-developers-section-component"] > div[class="organiza
 }
 section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > h1 {
     font-size: 2em;
-    font-weight: bold;
+    font-weight: calc(290 + 290);
     color: hsl(0, 0%, 20%);
     line-height: 1.1em;
     max-width: 30em;
@@ -215,7 +215,7 @@ article[class="developer-card-component"] > aside[class="developer-card-componen
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     gap: 2em;
 }
 article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
@@ -331,7 +331,7 @@ article[class="organization-ratings-component"] {
 }
 article[class="organization-ratings-component"] > h1 {
     font-size: 2em;
-    font-weight: bold;
+    font-weight: calc(290 + 290);
     color: hsl(0, 0%, 20%);
     line-height: 1.1em;
     text-align: center;
@@ -482,7 +482,7 @@ aside[class="organization-services-pricing-page-component-content"] {
 }
 aside[class="organization-services-pricing-page-component-content"] h1[id="osp"] {
     font-size: 2em;
-    font-weight: bold;
+    font-weight: calc(290 + 290);
     color: hsl(0, 0%, 20%);
     line-height: 1.1em;
     text-align: center;
