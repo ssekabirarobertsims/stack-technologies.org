@@ -14,6 +14,7 @@ import { BiMenu } from "react-icons/bi";
 
 const DropDownMenuComponent: React.FunctionComponent = () => {
   const ulRef = useRef(null);
+  const buttonRef = useRef(null);
   const [list, setList] = useState<ListItem[]>([
     {
       id: uuid() as string,
@@ -71,7 +72,7 @@ const DropDownMenuComponent: React.FunctionComponent = () => {
                   </a>
                 ))}
               </ul>
-              <button type="button" onClick={CloseDropDownMenu}>
+              <button type="button" onClick={CloseDropDownMenu} ref={buttonRef}>
                 Close Menu
               </button>
             </div>

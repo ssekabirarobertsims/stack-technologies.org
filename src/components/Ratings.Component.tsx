@@ -11,8 +11,7 @@ const OrganizationRatingsComponent: React.FC = () => {
         <p>
           We have been in the industry for over 4 years and have worked with
           over 45 clients to deliver the best results possible for their
-          business needs and requirements with our team of 24 developer
-          experts.
+          business needs and requirements with our team of 24 developer experts.
         </p>
         <div className="organization-ratings-component-content">
           <span>

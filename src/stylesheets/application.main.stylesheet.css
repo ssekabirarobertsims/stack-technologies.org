@@ -6,6 +6,7 @@
     transition-timing-function: linear;
     scroll-behavior: smooth;
 }
+
 *::after,
 *::before {
     padding: 0px 0px 0px 0px;
@@ -40,7 +41,7 @@ main[class="home-page-component"] {
     align-items: center;
     justify-content: center;
     /* border: 1px solid red; */
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 
@@ -68,6 +69,7 @@ main[class="home-page-component"] {
 ::-webkit-scrollbar {
     width: .4em;
 }
+
 ::-webkit-scrollbar-thumb {
     width: 1em;
     background-color: var(--primary-light-font-color);
@@ -77,9 +79,11 @@ main[class="home-page-component"] {
 button:active {
     scale: .8;
 }
+
 input {
     outline-style: none;
 }
+
 .span {
     font-size: 1em;
     font-weight: calc(300 + 200);
@@ -113,7 +117,8 @@ nav {
     z-index: 5;
     /* border: 1px solid red; */
 }
-nav > div[class="navigation-bar-component-wrapper"] {
+
+nav>div[class="navigation-bar-component-wrapper"] {
     min-height: 5em;
     width: min(90%, 90%);
     display: flex;
@@ -124,16 +129,19 @@ nav > div[class="navigation-bar-component-wrapper"] {
     gap: 1em;
     /* border: 1px solid red; */
 }
-nav > div[class="navigation-bar-component-wrapper"] a {
+
+nav>div[class="navigation-bar-component-wrapper"] a {
     text-decoration: none;
     text-decoration-color: none;
 }
-nav > div[class="navigation-bar-component-wrapper"] h1 {
+
+nav>div[class="navigation-bar-component-wrapper"] h1 {
     font-size: 1.5em;
     font-weight: calc(270 + 270);
     color: hsl(0, 0%, 20%);
 }
-nav > div[class="navigation-bar-component-wrapper"] ul {
+
+nav>div[class="navigation-bar-component-wrapper"] ul {
     min-height: 5em;
     width: min(80%, 40em);
     display: flex;
@@ -147,15 +155,18 @@ nav > div[class="navigation-bar-component-wrapper"] ul {
     flex-grow: 1;
     object-fit: cover;
 }
-nav > div[class="navigation-bar-component-wrapper"] ul :is(a) {
+
+nav>div[class="navigation-bar-component-wrapper"] ul :is(a) {
     font-weight: normal;
     color: var(--primary-dark-color);
     text-decoration: none;
 }
-nav > div[class="navigation-bar-component-wrapper"] ul :is(a):where(:hover, :focus) {
+
+nav>div[class="navigation-bar-component-wrapper"] ul :is(a):where(:hover, :focus) {
     color: var(--primary-color);
 }
-nav > div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
+
+nav>div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
     height: 3em;
     width: 10em;
     border: none;
@@ -184,7 +195,8 @@ header {
     background-position: top;
     background-attachment: fixed;
 }
-header > article[class="header-component-content-wrapper"] {
+
+header>article[class="header-component-content-wrapper"] {
     min-height: 90vh;
     width: min(100%, 100%);
     /* max-width: 37em; */
@@ -196,7 +208,8 @@ header > article[class="header-component-content-wrapper"] {
     gap: 1.5em;
     flex-grow: 1;
 }
-header > article[class="header-component-content-wrapper"] {
+
+header>article[class="header-component-content-wrapper"] {
     min-height: 90vh;
     width: min(100%, 100%);
     /* max-width: 37em; */
@@ -209,20 +222,23 @@ header > article[class="header-component-content-wrapper"] {
     background-color: rgba(0, 0, 0, .5);
     text-align: center;
 }
-header > article[class="header-component-content-wrapper"] :is(h1) {
+
+header>article[class="header-component-content-wrapper"] :is(h1) {
     font-size: 3em;
     font-weight: calc(290 + 290);
     color: hsl(0, 0%, 100%);
     line-height: 1.1em;
     max-width: 20em;
 }
-header > article[class="header-component-content-wrapper"] :is(p) {
+
+header>article[class="header-component-content-wrapper"] :is(p) {
     font-size: .9em;
     font-weight: calc(200 + 200);
     color: hsl(0, 0%, 100%);
     max-width: 46em;
 }
-header > article[class="header-component-content-wrapper"] :is(button) {
+
+header>article[class="header-component-content-wrapper"] :is(button) {
     height: 4em;
     width: 15em;
     border: none;
@@ -244,7 +260,8 @@ article[class="organization-services-component"] {
     flex-flow: row wrap;
     gap: 1em;
 }
-article[class="organization-services-component"] > div {
+
+article[class="organization-services-component"]>div {
     min-height: 15em;
     width: min(100%, 18em);
     display: flex;
@@ -260,24 +277,28 @@ article[class="organization-services-component"] > div {
     text-align: center;
     gap: 1em;
 }
-article[class="organization-services-component"] > div h1 {
-   font-weight: calc(250 + 250);
-   color: hsl(0, 0%, 20%);
-   font-size: 2em;
-   max-width: 5em;
+
+article[class="organization-services-component"]>div h1 {
+    font-weight: calc(250 + 250);
+    color: hsl(0, 0%, 20%);
+    font-size: 2em;
+    max-width: 5em;
 }
-article[class="organization-services-component"] > div h2 {
-   font-weight: calc(250 + 250);
-   color: hsl(0, 0%, 20%);
-   font-size: 1em;
+
+article[class="organization-services-component"]>div h2 {
+    font-weight: calc(250 + 250);
+    color: hsl(0, 0%, 20%);
+    font-size: 1em;
 }
-article[class="organization-services-component"] > div p {
-   font-weight: normal;
-   color: hsl(0, 0%, 20%);
-   font-size: .9em;
-   max-width: 17em;
+
+article[class="organization-services-component"]>div p {
+    font-weight: normal;
+    color: hsl(0, 0%, 20%);
+    font-size: .9em;
+    max-width: 17em;
 }
-article[class="organization-services-component"] > div button {
+
+article[class="organization-services-component"]>div button {
     height: 4em;
     width: 15em;
     border: none;
@@ -299,12 +320,14 @@ article[class="organization-experience-bar-component"] {
     flex-flow: row wrap;
     gap: 3em;
 }
+
 article[class="organization-experience-bar-component"] span {
     font-size: 15em;
     color: var(--primary-color);
     font-stretch: expanded;
     font-weight: bold;
 }
+
 article[class="organization-experience-bar-component"] div[class="organization-experience-bar-component-content"] {
     min-height: 40vh;
     width: min(100%, 28em);
@@ -316,20 +339,21 @@ article[class="organization-experience-bar-component"] div[class="organization-e
     gap: 1em;
     flex-grow: 1;
 }
-article[class="organization-experience-bar-component"] div[class="organization-experience-bar-component-content"] 
-h1 {
+
+article[class="organization-experience-bar-component"] div[class="organization-experience-bar-component-content"] h1 {
     font-size: 2em;
     font-weight: calc(290 + 290);
     color: hsl(0, 0%, 20%);
     max-width: 5em;
 }
-article[class="organization-experience-bar-component"] div[class="organization-experience-bar-component-content"] 
-p {
+
+article[class="organization-experience-bar-component"] div[class="organization-experience-bar-component-content"] p {
     font-size: .9em;
     font-weight: normal;
     color: hsl(0, 0%, 20%);
     max-width: 40em;
 }
+
 article[class="organization-experience-bar-component"] div[id="progress-count"] {
     align-items: center;
     justify-content: center;
@@ -337,6 +361,7 @@ article[class="organization-experience-bar-component"] div[id="progress-count"] 
     flex-flow: row wrap;
     gap: 0em;
 }
+
 article[class="organization-experience-bar-component"] div[id="progress-count"] article {
     height: 8em;
     width: 15em;
@@ -347,11 +372,13 @@ article[class="organization-experience-bar-component"] div[id="progress-count"] 
     border: 1px solid hsl(0, 0%, 96%);
     flex-grow: 1;
 }
+
 article[class="organization-experience-bar-component"] div[id="progress-count"] article :where(h1[id="rate"]) {
     font-weight: calc(290 + 290);
     color: hsl(0, 0%, 20%);
     font-size: 3em;
 }
+
 article[class="organization-experience-bar-component"] div[id="progress-count"] article :where(span) {
     font-weight: calc(250 + 150);
     color: hsl(0, 0%, 60%);
@@ -359,6 +386,31 @@ article[class="organization-experience-bar-component"] div[id="progress-count"] 
     /* max-width: 5em; */
 }
 
+/*  */
+.site-developer-navigation-component {
+    height: 4em;
+    width: 15em;
+    position: fixed;
+    bottom: 2em;
+    right: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    z-index: 3;
+}
+
+.site-developer-navigation-component>p {
+    font-size: .9em;
+    color: #000;
+    font-weight: normal;
+}
+
+.site-developer-navigation-component>a :where(img) {
+    height: 3em;
+    width: 3em;
+    border-radius: 100%;
+}
 
 /*  */
 main section[class="home-page-component-content-wrapper"] {
@@ -371,14 +423,16 @@ main section[class="home-page-component-content-wrapper"] {
     flex-direction: column;
     gap: 5em;
 }
-main > h1[class="welcome-heading"] {
+
+main>h1[class="welcome-heading"] {
     font-size: 2em;
     font-weight: bold;
     color: hsl(0, 0%, 15%);
     max-width: 25em;
     text-align: center;
 }
-main > p[class="welcome-paragraph"] {
+
+main>p[class="welcome-paragraph"] {
     font-size: .9em;
     font-weight: normal;
     color: hsl(0, 0%, 15%);
@@ -398,6 +452,7 @@ div[class="card-components-wrapper"] {
     flex-flow: row wrap;
     gap: 1em;
 }
+
 article[class="article-card-component"] {
     min-height: 15em;
     width: min(100%, 24em);
@@ -414,6 +469,7 @@ article[class="article-card-component"] {
     text-align: center;
     gap: 1em;
 }
+
 article[class="article-card-component"] :is(h1) {
     font-size: 3em;
     font-weight: bold;
@@ -421,6 +477,7 @@ article[class="article-card-component"] :is(h1) {
     max-width: 25em;
     line-height: 1.3em;
 }
+
 article[class="article-card-component"] :is(h2) {
     font-size: 1.1em;
     font-weight: calc(200 + 300);
@@ -428,6 +485,7 @@ article[class="article-card-component"] :is(h2) {
     max-width: 25em;
     line-height: 1.3em;
 }
+
 article[class="article-card-component"] :is(p) {
     font-size: .9em;
     font-weight: calc(300 + 150);
@@ -435,6 +493,7 @@ article[class="article-card-component"] :is(p) {
     max-width: 24em;
     line-height: 1.3em;
 }
+
 article[class="article-card-component"]:is(:hover) {
     background-color: hsl(273, 100%, 99%);
 }
@@ -451,6 +510,7 @@ aside[class="first-home-page-component-info-wrapper"] {
     /* border: 1px solid red; */
     gap: 2em;
 }
+
 aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"] {
     min-height: 20em;
     width: min(90%, 40em);
@@ -461,40 +521,41 @@ aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page
     /* border: 1px solid red; */
     gap: 1em;
     overflow: hidden;
-    cursor: pointer;border-top-left-radius: 1em;
+    cursor: pointer;
+    border-top-left-radius: 1em;
     border-bottom-right-radius: 1em;
 }
-aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"]
-:is(img) {
+
+aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"]:is(img) {
     height: 100%;
     width: min(100%, 100%);
     object-fit: cover;
     flex-grow: 1;
-    
+
 }
-aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"]
-:is(:hover, :focus):where(img) {
+
+aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"]:is(:hover, :focus):where(img) {
     border-top-left-radius: 0em;
     border-bottom-right-radius: 0em;
     transform: scale(1.2);
 }
-aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"]
-:is(h1) {
+
+aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"]:is(h1) {
     font-size: 2em;
     font-weight: bold;
     color: hsl(0, 0%, 15%);
     max-width: 25em;
     line-height: 1.3em;
 }
-aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"]
-:is(p) {
+
+aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"]:is(p) {
     font-size: .9em;
     font-weight: normal;
     color: hsl(0, 0%, 15%);
     max-width: 40em;
 }
-aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"]
-:is(button) {
+
+aside[class="first-home-page-component-info-wrapper"] div[class="first-home-page-component-info-wrapper-content"]:is(button) {
     height: 3em;
     width: 12em;
     border: none;
@@ -516,6 +577,7 @@ article[class="latest-sites-developed-component"] {
     gap: 1em;
     /* background-color: hsl(273, 100%, 98%); */
 }
+
 article[class="latest-sites-developed-component"] h1[id="lsh"] {
     font-size: 2em;
     font-weight: bold;
@@ -524,6 +586,7 @@ article[class="latest-sites-developed-component"] h1[id="lsh"] {
     text-align: center;
     max-width: 30em;
 }
+
 article[class="latest-sites-developed-component"] p[id="lsp"] {
     font-size: .9em;
     font-weight: normal;
@@ -532,6 +595,7 @@ article[class="latest-sites-developed-component"] p[id="lsp"] {
     max-width: 50em;
     text-align: center;
 }
+
 article[class="latest-sites-developed-component"] a[id="lsa"] {
     font-size: .9em;
     font-weight: normal;
@@ -553,6 +617,7 @@ div[class="latest-sites-developed-arr"] {
     gap: 1em;
     /* flex-grow: 1; */
 }
+
 article[class="latest-site-card-component"] {
     min-height: 18em;
     width: min(100%, 19em);
@@ -569,11 +634,13 @@ article[class="latest-site-card-component"] {
     box-shadow: -2.5px 3px 9.5px -2px #dddddd;
     overflow: hidden;
 }
+
 article[class="latest-site-card-component"] :where(img) {
     height: 18em;
     width: min(100%, 100%);
     flex-grow: 1;
 }
+
 article[class="latest-site-card-component"] :where(div) {
     min-height: 7em;
     width: min(100%, 40em);
@@ -588,6 +655,7 @@ article[class="latest-site-card-component"] :where(div) {
     bottom: 0px;
     left: 0px;
 }
+
 article[class="latest-site-card-component"] :where(div) aside {
     min-height: 7em;
     width: min(90%, 90%);
@@ -595,13 +663,14 @@ article[class="latest-site-card-component"] :where(div) aside {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.6);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     gap: .4em;
     /* border: 1px solid red; */
 }
+
 #disabled::before {
     content: "Coming Soon!";
     height: 100%;
@@ -613,13 +682,14 @@ article[class="latest-site-card-component"] :where(div) aside {
     position: absolute;
     top: 0px;
     left: 0px;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.6);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    border: 1px solid rgba(255,255,255,0.3);
-        color: var(--primary-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--primary-color);
     font-weight: normal;
 }
+
 article[class="latest-site-card-component"] :where(div) aside h1 {
     font-size: 1.2em;
     font-weight: normal;
@@ -627,17 +697,20 @@ article[class="latest-site-card-component"] :where(div) aside h1 {
     line-height: 1.1em;
     max-width: 30em;
 }
+
 article[class="latest-site-card-component"] :where(div) aside a {
     font-size: .9em;
     font-weight: normal;
     color: var(--primary-color);
 }
+
 /* article[class="latest-site-card-component"]:where(:hover, :focus) {
     transform: scale(1.1);
 } */
 article[class="latest-site-card-component"]:where(:hover, :focus) div {
     display: flex;
 }
+
 article[class="latest-site-card-component"] :where(div) h1 {
     font-size: 2em;
     font-weight: bold;
@@ -645,6 +718,7 @@ article[class="latest-site-card-component"] :where(div) h1 {
     line-height: 1.1em;
     max-width: 30em;
 }
+
 article[class="latest-site-card-component"] :where(div) p {
     font-size: .9em;
     font-weight: normal;
@@ -652,6 +726,7 @@ article[class="latest-site-card-component"] :where(div) p {
     line-height: 1.1em;
     max-width: 30em;
 }
+
 article[class="latest-site-card-component"] :where(div) button {
     height: 3em;
     width: 12em;
@@ -661,6 +736,7 @@ article[class="latest-site-card-component"] :where(div) button {
     background-color: var(--primary-color);
     cursor: pointer;
 }
+
 article[class="latest-site-card-component"] :where(div) img {
     height: 100%;
     width: min(100%, 100%);
@@ -670,6 +746,7 @@ article[class="latest-site-card-component"] :where(div) img {
     border-bottom-left-radius: 1em;
     border-top-right-radius: 1em;
 }
+
 article[class="latest-site-card-component"] :where(div):is(:hover, :focus) img {
     transform: scale(1.2);
     border-bottom-left-radius: 0em;
@@ -708,7 +785,8 @@ footer {
     background-color: #000;
     z-index: 1;
 }
-footer > article[class="footer-component-content"] {
+
+footer>article[class="footer-component-content"] {
     min-height: 19em;
     width: min(90%, 90%);
     display: flex;
@@ -720,7 +798,8 @@ footer > article[class="footer-component-content"] {
     color: #fff;
     gap: 3em;
 }
-footer > article[class="footer-component-content"] article {
+
+footer>article[class="footer-component-content"] article {
     min-height: 19em;
     width: min(100%, 22em);
     display: flex;
@@ -732,28 +811,34 @@ footer > article[class="footer-component-content"] article {
     flex-grow: 1;
     gap: 1em;
 }
-footer > article[class="footer-component-content"] article h1 {
+
+footer>article[class="footer-component-content"] article h1 {
     font-size: 1.8em;
 }
-footer > article[class="footer-component-content"] article p {
+
+footer>article[class="footer-component-content"] article p {
     font-size: .9em;
 }
-footer > article[class="footer-component-content"] article p :where(a) {
+
+footer>article[class="footer-component-content"] article p :where(a) {
     text-decoration-color: none;
     color: hsl(0, 0%, 70%);
 }
-footer > article[class="footer-component-content"] article .socials {
+
+footer>article[class="footer-component-content"] article .socials {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1em;
     list-style-type: none;
 }
-footer > article[class="footer-component-content"] article .socials > li {
+
+footer>article[class="footer-component-content"] article .socials>li {
     font-size: 1.3em;
     cursor: pointer;
 }
-footer > article[class="footer-component-content"] article .links {
+
+footer>article[class="footer-component-content"] article .links {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -761,13 +846,15 @@ footer > article[class="footer-component-content"] article .links {
     list-style-type: none;
     flex-direction: column;
 }
-footer > article[class="footer-component-content"] article .links > a {
+
+footer>article[class="footer-component-content"] article .links>a {
     font-size: .9em;
     cursor: pointer;
     text-decoration: none;
     color: #fff;
 }
-footer > article[class="footer-component-content"] article .contacts {
+
+footer>article[class="footer-component-content"] article .contacts {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -775,13 +862,15 @@ footer > article[class="footer-component-content"] article .contacts {
     list-style-type: none;
     flex-direction: column;
 }
-footer > article[class="footer-component-content"] article .contacts > li {
+
+footer>article[class="footer-component-content"] article .contacts>li {
     font-size: .9em;
     cursor: pointer;
     text-decoration: none;
     color: #fff;
 }
-footer > article[class="footer-component-copyright"] {
+
+footer>article[class="footer-component-copyright"] {
     min-height: 4em;
     width: min(100%, 100%);
     display: flex;
@@ -791,8 +880,9 @@ footer > article[class="footer-component-copyright"] {
     background-color: hsl(0, 0%, 3%);
     /* border: 1px solid red; */
 }
-footer > article[class="footer-component-copyright"] :where(span) {
-   color: #fff;
-   font-size: .7em;
-   font-weight: normal;
+
+footer>article[class="footer-component-copyright"] :where(span) {
+    color: #fff;
+    font-size: .7em;
+    font-weight: normal;
 }

@@ -13,55 +13,56 @@
     /* border: 1px solid red; */
     z-index: 2;
 }
+
 .spinner {
     position: relative;
     width: 15.7px;
     height: 15.7px;
- }
- 
- .spinner div {
+}
+
+.spinner div {
     animation: spinner-4t3wzl 1.875s infinite backwards;
     background-color: hsl(273, 100%, 50%);
     border-radius: 50%;
     height: 100%;
     position: absolute;
     width: 100%;
- }
- 
- .spinner div:nth-child(1) {
+}
+
+.spinner div:nth-child(1) {
     animation-delay: 0.15s;
     background-color: rgba(140, 0, 255, .9);
- }
- 
- .spinner div:nth-child(2) {
+}
+
+.spinner div:nth-child(2) {
     animation-delay: 0.3s;
     background-color: rgba(140, 0, 255, .8);
- }
- 
- .spinner div:nth-child(3) {
+}
+
+.spinner div:nth-child(3) {
     animation-delay: 0.45s;
     background-color: rgba(140, 0, 255, .7);
- }
- 
- .spinner div:nth-child(4) {
+}
+
+.spinner div:nth-child(4) {
     animation-delay: 0.6s;
     background-color: rgba(140, 0, 255, .6);
- }
- 
- .spinner div:nth-child(5) {
+}
+
+.spinner div:nth-child(5) {
     animation-delay: 0.75s;
     background-color: rgba(140, 0, 255, .5);
- }
- 
- @keyframes spinner-4t3wzl {
+}
+
+@keyframes spinner-4t3wzl {
     0% {
-       transform: rotate(0deg) translateY(-200%);
+        transform: rotate(0deg) translateY(-200%);
     }
- 
+
     60%, 100% {
-       transform: rotate(360deg) translateY(-200%);
+        transform: rotate(360deg) translateY(-200%);
     }
- }
+}
 
 /*  */
 section[class="organization-contact-page"] {
@@ -75,6 +76,7 @@ section[class="organization-contact-page"] {
     gap: 1em;
     flex-grow: 1;
 }
+
 section[class="organization-contact-page"] div[class="organization-contact-page-content"] {
     min-height: 80vh;
     width: min(90%, 90%);
@@ -85,7 +87,8 @@ section[class="organization-contact-page"] div[class="organization-contact-page-
     border: 1px solid red;
     gap: 1em;
 }
-section[class="organization-contact-page"] div[class="organization-contact-page-content"] > form {
+
+section[class="organization-contact-page"] div[class="organization-contact-page-content"]>form {
     min-height: 70vh;
     width: min(100%, 100%);
     display: flex;
@@ -95,20 +98,23 @@ section[class="organization-contact-page"] div[class="organization-contact-page-
     border: 1px solid red;
     gap: 1em;
 }
-section[class="organization-contact-page"] div[class="organization-contact-page-content"] > form :where(input) {
+
+section[class="organization-contact-page"] div[class="organization-contact-page-content"]>form :where(input) {
     height: 3.5em;
     width: min(100%, 50em);
     border: 1px solid hsl(0, 0%, 60%);
     border-radius: .2em;
 }
-section[class="organization-contact-page"] div[class="organization-contact-page-content"] > form :where(textarea) {
+
+section[class="organization-contact-page"] div[class="organization-contact-page-content"]>form :where(textarea) {
     height: 20em;
     width: min(100%, 50em);
     border: 1px solid hsl(0, 0%, 60%);
     field-sizing: content;
     border-radius: .5em;
 }
-section[class="organization-contact-page"] div[class="organization-contact-page-content"] > form :where(button) {
+
+section[class="organization-contact-page"] div[class="organization-contact-page-content"]>form :where(button) {
     height: 3em;
     width: 12em;
     border: none;
@@ -129,6 +135,7 @@ article[class="organization-skills-showcase-component"] {
     flex-direction: column;
     gap: 3em;
 }
+
 article[class="organization-skills-showcase-component"] div {
     min-height: 20em;
     width: min(100%, 100%);
@@ -140,6 +147,7 @@ article[class="organization-skills-showcase-component"] div {
     gap: 1em;
     overflow: hidden;
 }
+
 article[class="organization-skills-showcase-component"] div :is(article) {
     min-height: 20em;
     width: min(100%, 22em);
@@ -153,27 +161,31 @@ article[class="organization-skills-showcase-component"] div :is(article) {
     position: relative;
     background-color: #fff;
 }
-article[class="organization-skills-showcase-component"] div :is(article) > h1 {
+
+article[class="organization-skills-showcase-component"] div :is(article)>h1 {
     font-size: 2em;
     font-weight: calc(290 + 290);
     color: hsl(0, 0%, 20%);
     line-height: 1.1em;
     max-width: 30em;
 }
-article[class="organization-skills-showcase-component"] div :is(article) > p {
+
+article[class="organization-skills-showcase-component"] div :is(article)>p {
     font-size: .9em;
     font-weight: normal;
     color: hsl(0, 0%, 20%);
     line-height: 1.4em;
     max-width: 37em;
 }
-article[class="organization-skills-showcase-component"] div :is(article) > img {
+
+article[class="organization-skills-showcase-component"] div :is(article)>img {
     height: 20em;
     width: min(100%, 100%);
     border-radius: 1em;
     aspect-ratio: 19/16;
 }
-article[class="organization-skills-showcase-component"] div :is(article):is(:hover, :focus, :active) > img {
+
+article[class="organization-skills-showcase-component"] div :is(article):is(:hover, :focus, :active)>img {
     cursor: pointer;
     transform: rotate(1deg);
     scale: 1.1;
@@ -190,6 +202,7 @@ article[class="testimonials-component"] {
     flex-direction: column;
     gap: 2em;
 }
+
 article[class="testimonials-component"] h1 {
     font-size: 2em;
     font-weight: calc(290 + 290);
@@ -198,6 +211,7 @@ article[class="testimonials-component"] h1 {
     max-width: 30em;
     text-align: center;
 }
+
 article[class="testimonials-component"] div {
     min-height: 20em;
     width: min(100%, 100%);
@@ -209,6 +223,7 @@ article[class="testimonials-component"] div {
     flex-flow: row wrap;
     gap: 3em;
 }
+
 article[class="testimonials-component"] div :is(article) {
     min-height: 15em;
     width: min(100%, 22em);
@@ -225,6 +240,7 @@ article[class="testimonials-component"] div :is(article) {
     position: relative;
     background-color: #fff;
 }
+
 article[class="testimonials-component"] div :is(article)::before {
     content: "";
     height: 15em;
@@ -236,7 +252,8 @@ article[class="testimonials-component"] div :is(article)::before {
     z-index: -1;
     border-bottom: none;
 }
-article[class="testimonials-component"] div :is(article) > div[class="wrapper"] {
+
+article[class="testimonials-component"] div :is(article)>div[class="wrapper"] {
     min-height: 12em;
     width: min(90%, 90%);
     /* border: 1px solid red; */
@@ -246,7 +263,8 @@ article[class="testimonials-component"] div :is(article) > div[class="wrapper"] 
     flex-direction: column;
     gap: 0em
 }
-article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-client-content"] {
+
+article[class="testimonials-component"] div :is(article)>div[class="wrapper"]>div[class="testimonial-client-content"] {
     min-height: 4em;
     width: min(100%, 100%);
     /* border: 1px solid red; */
@@ -256,14 +274,14 @@ article[class="testimonials-component"] div :is(article) > div[class="wrapper"] 
     flex-direction: row;
     gap: 1em;
 }
-article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-client-content"] 
-img {
+
+article[class="testimonials-component"] div :is(article)>div[class="wrapper"]>div[class="testimonial-client-content"] img {
     height: 4em;
     width: 4em;
     border-radius: 100%;
 }
-article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-client-content"] 
-aside {
+
+article[class="testimonials-component"] div :is(article)>div[class="wrapper"]>div[class="testimonial-client-content"] aside {
     min-height: 4em;
     width: 20em;
     /* border: 1px solid red; */
@@ -274,13 +292,14 @@ aside {
     gap: .1em;
     flex-grow: 1;
 }
-article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-client-content"] 
-aside :is(span) {
+
+article[class="testimonials-component"] div :is(article)>div[class="wrapper"]>div[class="testimonial-client-content"] aside :is(span) {
     font-weight: normal;
     color: hsl(0, 0%, 30%);
     font-size: .9em;
 }
-article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-content"] {
+
+article[class="testimonials-component"] div :is(article)>div[class="wrapper"]>div[class="testimonial-content"] {
     min-height: 8em;
     width: min(100%, 100%);
     /* border: 1px solid red; */
@@ -290,7 +309,8 @@ article[class="testimonials-component"] div :is(article) > div[class="wrapper"] 
     flex-direction: column;
     gap: 1em;
 }
-article[class="testimonials-component"] div :is(article) > div[class="wrapper"] > div[class="testimonial-content"] > p {
+
+article[class="testimonials-component"] div :is(article)>div[class="wrapper"]>div[class="testimonial-content"]>p {
     font-weight: normal;
     color: hsl(0, 0%, 30%);
     font-size: .9em;
@@ -315,7 +335,8 @@ article[class="advert-component"] {
     border-radius: .5em;
     overflow: hidden;
 }
-article[class="advert-component"] > div {
+
+article[class="advert-component"]>div {
     min-height: 20em;
     width: min(100%, 100%);
     /* border: 1px solid red; */
@@ -324,9 +345,10 @@ article[class="advert-component"] > div {
     justify-content: center;
     flex-direction: column;
     gap: 1em;
-    background-color: rgba(71,75,255,0.5)
+    background-color: rgba(71, 75, 255, 0.5)
 }
-article[class="advert-component"] > div > aside {
+
+article[class="advert-component"]>div>aside {
     min-height: 18em;
     width: min(90%, 90%);
     /* border: 1px solid red */
@@ -338,7 +360,8 @@ article[class="advert-component"] > div > aside {
     color: #fff;
     text-align: center;
 }
-article[class="advert-component"] > div > aside :where(h1) {
+
+article[class="advert-component"]>div>aside :where(h1) {
     font-size: 2em;
     font-weight: calc(270 + 290);
     color: hsl(0, 0%, 100%);
@@ -346,7 +369,8 @@ article[class="advert-component"] > div > aside :where(h1) {
     text-align: center;
     max-width: 30em;
 }
-article[class="advert-component"] > div > aside :where(p) {
+
+article[class="advert-component"]>div>aside :where(p) {
     font-size: .9em;
     font-weight: calc(270 + 290);
     color: hsl(0, 0%, 100%);
@@ -354,17 +378,20 @@ article[class="advert-component"] > div > aside :where(p) {
     line-height: 1.1em;
     max-width: 50em;
 }
-article[class="advert-component"] > div > aside :where(article) {
+
+article[class="advert-component"]>div>aside :where(article) {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1em;
 }
-article[class="advert-component"] > div > aside :where(article) > a {
+
+article[class="advert-component"]>div>aside :where(article)>a {
     min-height: 1em;
     min-width: 1em;
 }
-article[class="advert-component"] > div > aside :where(article) > a :is(button) {
+
+article[class="advert-component"]>div>aside :where(article)>a :is(button) {
     height: 4em;
     width: 10em;
     border: none;
@@ -373,7 +400,8 @@ article[class="advert-component"] > div > aside :where(article) > a :is(button) 
     color: #fff;
     cursor: pointer;
 }
-article[class="advert-component"] > div > aside :where(article) > button {
+
+article[class="advert-component"]>div>aside :where(article)>button {
     height: 4em;
     width: 10em;
     border: none;
@@ -395,7 +423,8 @@ section[class="about-organization-page-component"] {
     gap: 1em;
     flex-grow: 1;
 }
-section[class="about-organization-page-component"] > div[class="about-organization-page-component-content"] {
+
+section[class="about-organization-page-component"]>div[class="about-organization-page-component-content"] {
     min-height: 120vh;
     width: min(90%, 90%);
     display: flex;
@@ -406,7 +435,8 @@ section[class="about-organization-page-component"] > div[class="about-organizati
     gap: 1em;
     /* flex-grow: 1; */
 }
-section[class="about-organization-page-component"] > div[class="about-organization-page-component-content"] h1 {
+
+section[class="about-organization-page-component"]>div[class="about-organization-page-component-content"] h1 {
     font-size: 2em;
     font-weight: bold;
     color: hsl(0, 0%, 20%);
@@ -414,7 +444,8 @@ section[class="about-organization-page-component"] > div[class="about-organizati
     text-align: center;
     max-width: 30em;
 }
-section[class="about-organization-page-component"] > div[class="about-organization-page-component-content"] p {
+
+section[class="about-organization-page-component"]>div[class="about-organization-page-component-content"] p {
     font-size: .9em;
     font-weight: normal;
     color: hsl(0, 0%, 20%);
@@ -429,10 +460,11 @@ aside[class="dd-menu"] {
     background-color: transparent;
     display: flex;
     align-items: flex-end;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
     /* border: 1px solid red; */
 }
+
 div[class="dd-menu"] :is(button[class="dd-menu-button"]) {
     height: 3em;
     width: 4em;
@@ -446,6 +478,7 @@ div[class="dd-menu"] :is(button[class="dd-menu-button"]) {
     display: none;
     flex-grow: 2;
 }
+
 div[class="dd-menu"] aside[class="dd-menu-wrapper"] {
     min-height: 100vh;
     width: min(0%, 0%);
@@ -460,7 +493,8 @@ div[class="dd-menu"] aside[class="dd-menu-wrapper"] {
     overflow: hidden;
     /* border: 1px solid red; */
 }
-div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) {
+
+div[class="dd-menu"] aside[class="dd-menu-wrapper"]> :is(article[class="dd-menu-content"]) {
     min-height: 100vh;
     width: min(90%, 20em);
     display: flex;
@@ -471,7 +505,8 @@ div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu
     border-left: 1px solid hsl(0, 0%, 85%);
     gap: 1em;
 }
-div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"] {
+
+div[class="dd-menu"] aside[class="dd-menu-wrapper"]> :is(article[class="dd-menu-content"])>div[class="dd-menu-content-wrapper"] {
     min-height: 100vh;
     width: min(90%, 90%);
     display: flex;
@@ -482,8 +517,8 @@ div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu
     gap: 1em;
     /* border: 1px solid red; */
 }
-div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"]
- ul {
+
+div[class="dd-menu"] aside[class="dd-menu-wrapper"]> :is(article[class="dd-menu-content"])>div[class="dd-menu-content-wrapper"] ul {
     min-height: 28em;
     width: min(100%, 100%);
     display: flex;
@@ -495,8 +530,8 @@ div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu
     /* border: 1px solid red; */
     flex-grow: 0;
 }
-div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"]
- ul :where(a) {
+
+div[class="dd-menu"] aside[class="dd-menu-wrapper"]> :is(article[class="dd-menu-content"])>div[class="dd-menu-content-wrapper"] ul :where(a) {
     height: 3em;
     width: min(100%, 100%);
     /* border: 1px solid red; */
@@ -510,8 +545,8 @@ div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu
     text-decoration-line: none;
     color: hsl(0, 0%, 20%);
 }
-div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"]
- button {
+
+div[class="dd-menu"] aside[class="dd-menu-wrapper"]> :is(article[class="dd-menu-content"])>div[class="dd-menu-content-wrapper"] button {
     height: 3em;
     width: min(95%, 95%);
     border: none;
@@ -519,8 +554,8 @@ div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu
     color: #fff;
     cursor: pointer;
 }
-div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"]
- ul :where(a) > li {
+
+div[class="dd-menu"] aside[class="dd-menu-wrapper"]> :is(article[class="dd-menu-content"])>div[class="dd-menu-content-wrapper"] ul :where(a)>li {
     height: 3em;
     width: min(95%, 95%);
     font-weight: calc(220 + 220);
@@ -529,8 +564,8 @@ div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu
     justify-content: center;
     flex-direction: column;
 }
-div[class="dd-menu"] aside[class="dd-menu-wrapper"] > :is(article[class="dd-menu-content"]) > div[class="dd-menu-content-wrapper"]
- ul :where(a):is(:hover, :focus) {
+
+div[class="dd-menu"] aside[class="dd-menu-wrapper"]> :is(article[class="dd-menu-content"])>div[class="dd-menu-content-wrapper"] ul :where(a):is(:hover, :focus) {
     background-color: var(--primary-color);
     color: #fff
 }
@@ -547,7 +582,8 @@ article[class="about-organization-component"] {
     flex-flow: row wrap;
     gap: 2em;
 }
-article[class="about-organization-component"] > div[class="about-organization-component-content-container"] {
+
+article[class="about-organization-component"]>div[class="about-organization-component-content-container"] {
     min-height: 20em;
     width: min(100%, 35em);
     /* border: 1px solid red; */
@@ -558,20 +594,23 @@ article[class="about-organization-component"] > div[class="about-organization-co
     gap: 1.5em;
     flex-grow: 1;
 }
-article[class="about-organization-component"] > div[class="about-organization-component-content-container"] > h1 {
+
+article[class="about-organization-component"]>div[class="about-organization-component-content-container"]>h1 {
     font-size: 2em;
     font-weight: calc(290 + 290);
     color: hsl(0, 0%, 20%);
     line-height: 1.1em;
     max-width: 30em;
 }
-article[class="about-organization-component"] > div[class="about-organization-component-content-container"] > p {
+
+article[class="about-organization-component"]>div[class="about-organization-component-content-container"]>p {
     font-size: .9em;
     font-weight: normal;
     color: hsl(0, 0%, 20%);
     line-height: 1.4em;
 }
-article[class="about-organization-component"] > div[class="about-organization-component-content-container"] > ul {
+
+article[class="about-organization-component"]>div[class="about-organization-component-content-container"]>ul {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -582,7 +621,8 @@ article[class="about-organization-component"] > div[class="about-organization-co
     color: hsl(0, 0%, 20%);
     cursor: pointer;
 }
-article[class="about-organization-component"] > div[class="about-organization-component-photo-container"] {
+
+article[class="about-organization-component"]>div[class="about-organization-component-photo-container"] {
     min-height: 20em;
     width: min(100%, 35em);
     /* border: 1px solid red; */
@@ -594,13 +634,15 @@ article[class="about-organization-component"] > div[class="about-organization-co
     flex-grow: 1;
     overflow: hidden;
 }
-article[class="about-organization-component"] > div[class="about-organization-component-photo-container"] > img {
+
+article[class="about-organization-component"]>div[class="about-organization-component-photo-container"]>img {
     height: 20em;
     width: min(100%, 100%);
     border-radius: 1em;
     aspect-ratio: 19/16;
 }
-article[class="about-organization-component"] > div[class="about-organization-component-photo-container"]:is(:hover, :focus, :active) > img {
+
+article[class="about-organization-component"]>div[class="about-organization-component-photo-container"]:is(:hover, :focus, :active)>img {
     cursor: pointer;
     transform: rotate(1deg);
     scale: 1.1;

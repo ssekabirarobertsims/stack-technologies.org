@@ -8,8 +8,9 @@ section[class="organization-developers-page"] {
     flex-direction: column;
     /* border: 1px solid red; */
     gap: 0em;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
+
 section[class="organization-developers-page"] div[class="organization-developers-page-wrapper"] {
     min-height: 60vh;
     width: min(90%, 90%);
@@ -21,7 +22,8 @@ section[class="organization-developers-page"] div[class="organization-developers
     gap: 0em;
     flex-grow: 1;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-page-wrapper"] {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-page-wrapper"] {
     min-height: 60vh;
     width: min(90%, 90%);
     display: flex;
@@ -31,7 +33,8 @@ section[class="organization-developers-section-component"] > div[class="organiza
     border: 1px solid red;
     gap: 0em;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"] {
     min-height: 70vh;
     width: min(100%, 100%);
     display: flex;
@@ -41,7 +44,8 @@ section[class="organization-developers-section-component"] > div[class="organiza
     /* border: 1px solid red; */
     gap: 1em;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > h1 {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>h1 {
     font-size: 2em;
     font-weight: calc(290 + 290);
     color: hsl(0, 0%, 20%);
@@ -49,7 +53,8 @@ section[class="organization-developers-section-component"] > div[class="organiza
     max-width: 30em;
     text-align: center;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > p {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>p {
     font-size: .9em;
     font-weight: normal;
     color: hsl(0, 0%, 20%);
@@ -57,8 +62,8 @@ section[class="organization-developers-section-component"] > div[class="organiza
     line-height: 1.1em;
     max-width: 70em;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-div[class="developers-cards-wrapper"] {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] {
     min-height: 20em;
     width: min(100%, 100%);
     display: flex;
@@ -69,8 +74,8 @@ div[class="developers-cards-wrapper"] {
     gap: 1em;
     flex-flow: row wrap;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-div[class="developers-cards-wrapper"] article {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] article {
     height: 20em;
     width: min(100%, 15em);
     display: flex;
@@ -85,14 +90,14 @@ div[class="developers-cards-wrapper"] article {
     overflow: hidden;
     border-radius: .5em;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-div[class="developers-cards-wrapper"] article :where(img) {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] article :where(img) {
     height: 100%;
     width: min(100%, 100%);
     aspect-ratio: 16/9;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-div[class="developers-cards-wrapper"] article :where(aside) {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] article :where(aside) {
     height: 7em;
     width: min(90%, 90%);
     display: none;
@@ -111,15 +116,15 @@ div[class="developers-cards-wrapper"] article :where(aside) {
     border-top-right-radius: .5em;
     border-bottom-right-radius: .5em;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-div[class="developers-cards-wrapper"] article:where(:hover, :focus) aside {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] article:where(:hover, :focus) aside {
     display: flex;
     transition-behavior: smooth;
     transition-duration: 100ms;
     transition-timing-function: linear;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper"] {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] article :where(aside)>div[class="wrapper"] {
     height: 5em;
     width: min(90%, 90%);
     display: flex;
@@ -130,32 +135,32 @@ div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper
     gap: .3em;
     /* border: 1px solid red; */
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper"] > h1 {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] article :where(aside)>div[class="wrapper"]>h1 {
     font-size: 1.2em;
     font-weight: calc(200 + 200);
     color: hsl(0, 0%, 100%);
     line-height: 1.1em;
     max-width: 30em;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper"] > p {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] article :where(aside)>div[class="wrapper"]>p {
     font-size: .8em;
     font-weight: normal;
     color: hsl(0, 0%, 100%);
     line-height: 1.1em;
     max-width: 30em;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper"] > ul {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] article :where(aside)>div[class="wrapper"]>ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1em;
     list-style: none;
 }
-section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-div[class="developers-cards-wrapper"] article :where(aside) > div[class="wrapper"] > ul a {
+
+section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] article :where(aside)>div[class="wrapper"]>ul a {
     font-size: 1.2em;
     text-decoration: none;
     color: #fff;
@@ -174,7 +179,8 @@ article[class="developer-card-component"] {
     gap: 1em;
     flex-grow: 1;
 }
-article[class="developer-card-component"] > h1[id="tdh"] {
+
+article[class="developer-card-component"]>h1[id="tdh"] {
     font-size: 2em;
     font-weight: bold;
     color: hsl(0, 0%, 20%);
@@ -182,7 +188,8 @@ article[class="developer-card-component"] > h1[id="tdh"] {
     text-align: center;
     max-width: 30em;
 }
-article[class="developer-card-component"] > p[id="tdp"] {
+
+article[class="developer-card-component"]>p[id="tdp"] {
     font-size: .9em;
     font-weight: normal;
     color: hsl(0, 0%, 20%);
@@ -190,7 +197,8 @@ article[class="developer-card-component"] > p[id="tdp"] {
     max-width: 30em;
     text-align: center;
 }
-article[class="developer-card-component"] > aside[class="developer-card-component-info"] {
+
+article[class="developer-card-component"]>aside[class="developer-card-component-info"] {
     min-height: 30vh;
     width: min(100%, 100%);
     display: flex;
@@ -201,14 +209,14 @@ article[class="developer-card-component"] > aside[class="developer-card-componen
     gap: 1em;
     /* flex-grow: 1; */
 }
-article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
-:is(p[class="dev-description"]) {
+
+article[class="developer-card-component"]>aside[class="developer-card-component-info"]:is(p[class="dev-description"]) {
     font-size: .9em;
-    color:hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 20%);
     max-width: 80em;
 }
-article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
-:is(div[class="profile"]) {
+
+article[class="developer-card-component"]>aside[class="developer-card-component-info"]:is(div[class="profile"]) {
     min-height: 10vh;
     width: min(100%, 100%);
     display: flex;
@@ -218,14 +226,14 @@ article[class="developer-card-component"] > aside[class="developer-card-componen
     border: 1px solid red;
     gap: 2em;
 }
-article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
-:is(div[class="profile"]) > img {
+
+article[class="developer-card-component"]>aside[class="developer-card-component-info"]:is(div[class="profile"])>img {
     height: 5em;
     width: 5em;
     border-radius: 100%;
 }
-article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
-:is(div[class="profile"]) > div {
+
+article[class="developer-card-component"]>aside[class="developer-card-component-info"]:is(div[class="profile"])>div {
     min-height: 10vh;
     width: min(90%, 90%);
     display: flex;
@@ -236,14 +244,14 @@ article[class="developer-card-component"] > aside[class="developer-card-componen
     gap: .2em;
     flex-grow: 1;
 }
-article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
-:is(div[class="profile"]) > div span {
+
+article[class="developer-card-component"]>aside[class="developer-card-component-info"]:is(div[class="profile"])>div span {
     font-weight: normal;
-    color:hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 20%);
     font-size: .9em;
 }
-article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
-:is(ul) {
+
+article[class="developer-card-component"]>aside[class="developer-card-component-info"]:is(ul) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,13 +259,13 @@ article[class="developer-card-component"] > aside[class="developer-card-componen
     list-style: none;
     list-style-type: none;
 }
-article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
-:is(ul) > li a {
+
+article[class="developer-card-component"]>aside[class="developer-card-component-info"]:is(ul)>li a {
     font-size: 1.5em;
-    color:hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 20%);
 }
-article[class="developer-card-component"] > aside[class="developer-card-component-info"] 
-:is(button) {
+
+article[class="developer-card-component"]>aside[class="developer-card-component-info"]:is(button) {
     height: 3em;
     width: 12em;
     border: none;
@@ -279,6 +287,7 @@ section[class="organization-projects-section-component"] {
     gap: 1em;
     flex-grow: 1;
 }
+
 section[class="organization-projects-section-component"] div[class="organization-projects-section-component-content-wrapper"] {
     min-height: 50vh;
     width: min(90%, 90%);
@@ -290,6 +299,7 @@ section[class="organization-projects-section-component"] div[class="organization
     gap: 1em;
     /* flex-grow: 1; */
 }
+
 section[class="organization-projects-section-component"] div[class="organization-projects-section-component-content-wrapper"] :is(h1) {
     font-size: 2em;
     font-weight: bold;
@@ -298,6 +308,7 @@ section[class="organization-projects-section-component"] div[class="organization
     text-align: center;
     max-width: 30em;
 }
+
 section[class="organization-projects-section-component"] div[class="organization-projects-section-component-content-wrapper"] :is(h1[id="oph"]) {
     font-size: 2em;
     font-weight: bold;
@@ -306,9 +317,10 @@ section[class="organization-projects-section-component"] div[class="organization
     text-align: center;
     max-width: 30em;
 }
+
 section[class="organization-projects-section-component"] div[class="organization-projects-section-component-content-wrapper"] :is(p[id="ops"]) {
     font-size: .9em;
-    color:hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 20%);
     max-width: 50em;
     text-align: center;
 }
@@ -329,7 +341,8 @@ article[class="organization-ratings-component"] {
     flex-grow: 1;
     text-align: center;
 }
-article[class="organization-ratings-component"] > h1 {
+
+article[class="organization-ratings-component"]>h1 {
     font-size: 2em;
     font-weight: calc(290 + 290);
     color: hsl(0, 0%, 20%);
@@ -337,12 +350,14 @@ article[class="organization-ratings-component"] > h1 {
     text-align: center;
     max-width: 30em;
 }
-article[class="organization-ratings-component"] > p {
+
+article[class="organization-ratings-component"]>p {
     font-size: .9em;
-    color:hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 20%);
     max-width: 50em;
 }
-article[class="organization-ratings-component"] > div[class="organization-ratings-component-content"] {
+
+article[class="organization-ratings-component"]>div[class="organization-ratings-component-content"] {
     min-height: 2em;
     width: min(100%, 100%);
     display: flex;
@@ -352,7 +367,8 @@ article[class="organization-ratings-component"] > div[class="organization-rating
     /* border: 1px solid red; */
     gap: 1em;
 }
-article[class="organization-ratings-component"] > div[class="organization-ratings-component-content"] span {
+
+article[class="organization-ratings-component"]>div[class="organization-ratings-component-content"] span {
     font-size: 1.3em;
     font-weight: bold;
     color: hsl(0, 0%, 20%);
@@ -360,7 +376,8 @@ article[class="organization-ratings-component"] > div[class="organization-rating
     text-align: center;
     max-width: 30em;
 }
-article[class="organization-ratings-component"] > div[class="organization-ratings-component-content"] span strong {
+
+article[class="organization-ratings-component"]>div[class="organization-ratings-component-content"] span strong {
     color: var(--primary-color);
 }
 
@@ -377,7 +394,8 @@ section[class="organization-services-component-page"] {
     gap: 1em;
     flex-grow: 1;
 }
-section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] {
+
+section[class="organization-services-component-page"]>div[class="organization-services-component-page-wrapper"] {
     min-height: 120vh;
     width: min(90%, 90%);
     display: flex;
@@ -387,7 +405,8 @@ section[class="organization-services-component-page"] > div[class="organization-
     /* border: 1px solid red; */
     gap: 1em;
 }
-section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] > h1[id="ocp_h"] {
+
+section[class="organization-services-component-page"]>div[class="organization-services-component-page-wrapper"]>h1[id="ocp_h"] {
     font-size: 2em;
     font-weight: bold;
     color: hsl(0, 0%, 20%);
@@ -395,7 +414,8 @@ section[class="organization-services-component-page"] > div[class="organization-
     text-align: center;
     max-width: 30em;
 }
-section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) {
+
+section[class="organization-services-component-page"]>div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) {
     min-height: 110vh;
     width: min(100%, 100%);
     display: flex;
@@ -406,8 +426,8 @@ section[class="organization-services-component-page"] > div[class="organization-
     /* border: 1px solid red; */
     gap: 1em;
 }
-section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) 
-article[class="service"] {
+
+section[class="organization-services-component-page"]>div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) article[class="service"] {
     min-height: 18em;
     width: min(100%, 20em);
     display: flex;
@@ -419,8 +439,8 @@ article[class="service"] {
     flex-grow: 1;
     border-radius: .5em;
 }
-section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) 
-article[class="service"] > div {
+
+section[class="organization-services-component-page"]>div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) article[class="service"]>div {
     min-height: 13em;
     width: min(90%, 90%);
     display: flex;
@@ -430,24 +450,24 @@ article[class="service"] > div {
     /* border: 1px solid red; */
     gap: 1em;
 }
-section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) 
-article[class="service"] > div h1 {
+
+section[class="organization-services-component-page"]>div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) article[class="service"]>div h1 {
     font-size: 1.5em;
     font-weight: normal;
     color: hsl(0, 0%, 20%);
     line-height: 1.1em;
     max-width: 30em;
 }
-section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) 
-article[class="service"] > div p {
+
+section[class="organization-services-component-page"]>div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) article[class="service"]>div p {
     font-size: .9em;
     font-weight: normal;
     color: hsl(0, 0%, 20%);
     line-height: 1.1em;
     max-width: fit-content;
 }
-section[class="organization-services-component-page"] > div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) 
-article[class="service"] > div button {
+
+section[class="organization-services-component-page"]>div[class="organization-services-component-page-wrapper"] :is(aside[class="services"]) article[class="service"]>div button {
     height: 3em;
     width: 12em;
     border: none;
@@ -469,6 +489,7 @@ article[class="organization-services-pricing-page-component"] {
     gap: 1em;
     flex-grow: 1;
 }
+
 aside[class="organization-services-pricing-page-component-content"] {
     min-height: 120vh;
     width: min(100%, 100%);
@@ -480,6 +501,7 @@ aside[class="organization-services-pricing-page-component-content"] {
     gap: 1em;
     /* flex-grow: 1; */
 }
+
 aside[class="organization-services-pricing-page-component-content"] h1[id="osp"] {
     font-size: 2em;
     font-weight: calc(290 + 290);
@@ -488,6 +510,7 @@ aside[class="organization-services-pricing-page-component-content"] h1[id="osp"]
     text-align: center;
     max-width: 30em;
 }
+
 aside[class="organization-services-pricing-page-component-content"] p[id="osw"] {
     font-size: .9em;
     font-weight: normal;
@@ -496,8 +519,8 @@ aside[class="organization-services-pricing-page-component-content"] p[id="osw"] 
     text-align: center;
     max-width: 50em;
 }
-aside[class="organization-services-pricing-page-component-content"] 
-div[class="pricing-tags-wrapper"] {
+
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] {
     min-height: 90vh;
     width: min(100%, 100%);
     display: flex;
@@ -509,8 +532,8 @@ div[class="pricing-tags-wrapper"] {
     gap: 1em;
     flex-grow: 1;
 }
-aside[class="organization-services-pricing-page-component-content"] 
-div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) {
+
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) {
     min-height: 70vh;
     width: min(100%, 24em);
     display: flex;
@@ -521,8 +544,8 @@ div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) {
     gap: 1em;
     border-radius: .5em;
 }
-aside[class="organization-services-pricing-page-component-content"] 
-div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"]) {
+
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"]) {
     min-height: 85vh;
     width: min(100%, 24em);
     display: flex;
@@ -534,6 +557,7 @@ div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"]) {
     border-radius: .5em;
     position: relative;
 }
+
 /* aside[class="organization-services-pricing-page-component-content"] 
 div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
     content: "Most Popular";
@@ -551,8 +575,7 @@ div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::befo
     color: #fff;
     font-weight: bolder;
 } */
-aside[class="organization-services-pricing-page-component-content"] 
-div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] {
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] {
     min-height: 100%;
     width: min(90%, 90%);
     display: flex;
@@ -561,8 +584,8 @@ div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class
     flex-direction: column;
     gap: 1em;
 }
-aside[class="organization-services-pricing-page-component-content"] 
-div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] h1 {
+
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] h1 {
     font-size: 1.5em;
     font-weight: bold;
     color: hsl(0, 0%, 20%);
@@ -570,16 +593,16 @@ div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class
     text-align: center;
     max-width: 30em;
 }
-aside[class="organization-services-pricing-page-component-content"] 
-div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] ul {
+
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5em;
     flex-direction: column;
 }
-aside[class="organization-services-pricing-page-component-content"] 
-div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] ul > li {
+
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] ul>li {
     text-decoration: none;
     list-style-type: none;
     list-style: none;
@@ -587,12 +610,12 @@ div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class
     font-style: normal;
     color: hsl(0, 0%, 20%);
 }
-aside[class="organization-services-pricing-page-component-content"] 
-div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] a {
+
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] a {
     width: min(100%, 100%);
 }
-aside[class="organization-services-pricing-page-component-content"] 
-div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] a > button {
+
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class="pricing-tag-wrapper"] a>button {
     height: 3em;
     width: min(100%, 100%);
     border: none;
@@ -601,8 +624,8 @@ div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) div[class
     background-color: #000;
     cursor: pointer;
 }
-aside[class="organization-services-pricing-page-component-content"] 
-div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"]) div[class="pricing-tag-wrapper"] a > button {
+
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"]) div[class="pricing-tag-wrapper"] a>button {
     height: 3em;
     width: min(100%, 100%);
     border: none;

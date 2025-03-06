@@ -13,6 +13,8 @@ import DropDownMenuComponent from "./DD.Menu.Component";
 
 const NavigationBarComponent: React.FC = () => {
   const ulRef = useRef(null);
+  const buttonRef = useRef(null);
+
   const [list, setList] = useState<ListItem[]>([
     {
       id: uuid() as string,
@@ -25,7 +27,7 @@ const NavigationBarComponent: React.FC = () => {
       href: "/#about-organization" as string,
     },
     {
-      id: uuid() as string, 
+      id: uuid() as string,
       value: "Team" as string,
       href: "/#organization-developers-team" as string,
     },
@@ -72,7 +74,11 @@ const NavigationBarComponent: React.FC = () => {
             href="/#organization-services-pricing"
             id="nav-bar-pricing-button-wrapper"
           >
-            <button type="button" id="nav-bar-pricing-button">
+            <button
+              type="button"
+              id="nav-bar-pricing-button"
+              ref={buttonRef.current}
+            >
               See Pricing
             </button>
           </a>

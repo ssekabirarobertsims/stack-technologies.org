@@ -1,23 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 import { CgWebsite } from "react-icons/cg";
 import { FaDatabase } from "react-icons/fa";
 import { FaServer } from "react-icons/fa";
 
 const OrganizationServicesComponent: React.FC = () => {
+  const buttonRef = useRef(null);
+
   return (
     <>
-    <br />
-      <article
-        className="organization-services-component"
-      >
+      <br />
+      <article className="organization-services-component">
         <div className="organization-service">
           <h1>
             <CgWebsite />
           </h1>
           <h2>Frontend development</h2>
           <p>
-            We create responsive and user-friendly websites responsive iu designs that are easy to
-            navigate for the user.
+            We create responsive and user-friendly websites responsive iu
+            designs that are easy to navigate for the user.
           </p>
         </div>
         <div className="organization-service">
@@ -42,7 +42,7 @@ const OrganizationServicesComponent: React.FC = () => {
         </div>
         <div className="organization-service">
           <h1>See All Services</h1>
-          <button type="button">All Our Services</button>
+          <button type="button" ref={buttonRef.current}>All Our Services</button>
         </div>
       </article>
     </>

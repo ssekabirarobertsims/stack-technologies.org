@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const AdvertComponent: React.FC = () => {
+  const buttonRef = useRef(null);
+
   return (
     <>
       <article className="advert-component">
@@ -13,9 +15,13 @@ const AdvertComponent: React.FC = () => {
             </p>
             <article>
               <a href="/#organization-legal-information">
-                <button type="button">Get In Touch</button>
+                <button type="button" ref={buttonRef.current}>
+                  Get In Touch
+                </button>
               </a>
-              <button type="button">Learn More</button>
+              <button type="button" ref={buttonRef.current}>
+                Learn More
+              </button>
             </article>
           </aside>
         </div>

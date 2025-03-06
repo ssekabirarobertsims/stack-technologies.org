@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const ServicesPricingPlansComponent: React.FC = () => {
+  const buttonRef = useRef(null);
+
   return (
     <>
-      <aside className="organization-services-pricing-page-component-content">
-        <span className="span" id="organization-services-pricing">
-          Pricing Plan
-        </span>
+      <br />
+      <aside
+        className="organization-services-pricing-page-component-content"
+        id="organization-services-pricing"
+      >
         <h1 id="osp">Choose the right plan for your business</h1>
         <p id="osw">
           We offer tailored web development services, including design,
@@ -28,7 +31,9 @@ const ServicesPricingPlansComponent: React.FC = () => {
               </ul>
               <p> </p>
               <a href="mailto:robertsims7076@gmail.com">
-                <button type="button">Get Started With Plan</button>
+                <button type="button" ref={buttonRef.current}>
+                  Get Started With Plan
+                </button>
               </a>
             </div>
           </article>
@@ -47,7 +52,9 @@ const ServicesPricingPlansComponent: React.FC = () => {
               </ul>
               <p> </p>
               <a href="mailto:robertsims7076@gmail.com">
-                <button type="button">Get Started With Plan</button>
+                <button type="button" ref={buttonRef.current}>
+                  Get Started With Plan
+                </button>
               </a>
             </div>
           </article>
@@ -65,7 +72,9 @@ const ServicesPricingPlansComponent: React.FC = () => {
               </ul>
               <p> </p>
               <a href="mailto:robertsims7076@gmail.com">
-                <button type="button">Get Started With Plan</button>
+                <button type="button" ref={buttonRef.current}>
+                  Get Started With Plan
+                </button>
               </a>
             </div>
           </article>

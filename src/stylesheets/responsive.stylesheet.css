@@ -1,46 +1,50 @@
-
 /*  */
 @media all and (max-width: 1024px) {
-    
-    nav > div[class="navigation-bar-component-wrapper"] ul {
+
+    nav>div[class="navigation-bar-component-wrapper"] ul {
         display: flex;
         gap: 1.2em
     }
-    nav > div[class="navigation-bar-component-wrapper"] a[id="nav-bar-pricing-button-wrapper"] {
+
+    nav>div[class="navigation-bar-component-wrapper"] a[id="nav-bar-pricing-button-wrapper"] {
         display: flex;
     }
-    nav > div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
+
+    nav>div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
         display: block;
         width: 10em;
-    } 
-    nav > div[class="navigation-bar-component-wrapper"] {
+    }
+
+    nav>div[class="navigation-bar-component-wrapper"] {
         justify-content: center;
         align-items: center;
         gap: 0em;
     }
-    nav > div[class="navigation-bar-component-wrapper"] h1 {
+
+    nav>div[class="navigation-bar-component-wrapper"] h1 {
         font-size: 1.2em;
     }
+
     div[class="dd-menu"] :is(button[class="dd-menu-button"]) {
         display: none;
     }
-    
+
 
     /*  */
-    header > article[class="header-component-content-wrapper"] :is(h1) {
+    header>article[class="header-component-content-wrapper"] :is(h1) {
         font-size: 2.6em;
     }
-    header > article[class="header-component-content-wrapper"] :is(p) {
+
+    header>article[class="header-component-content-wrapper"] :is(p) {
         font-size: .9em;
-    } 
+    }
 
     /*  */
-    aside[class="organization-services-pricing-page-component-content"] 
-    div[class="pricing-tags-wrapper"] {
+    aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] {
         gap: 3em;
     }
-    aside[class="organization-services-pricing-page-component-content"] 
-    div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
+
+    aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
         left: 7em;
     }
 
@@ -48,9 +52,11 @@
     article[class="organization-experience-bar-component"] {
         gap: 1em;
     }
+
     article[class="organization-experience-bar-component"] span {
         font-size: 10em;
     }
+
     article[class="organization-experience-bar-component"] div[class="organization-experience-bar-component-content"] {
         align-items: flex-start;
         text-align: left;
@@ -61,18 +67,18 @@
         min-height: 20em;
         /* border: 1px solid red; */
     }
+
     article[class="testimonials-component"] div :is(article)::before {
         display: none;
     }
 
     /*  */
-    section[class="organization-developers-section-component"] > div[class="organization-developers-section-component-content-wrapper"] > 
-    div[class="developers-cards-wrapper"] article {
+    section[class="organization-developers-section-component"]>div[class="organization-developers-section-component-content-wrapper"]>div[class="developers-cards-wrapper"] article {
         max-width: 19em;
     }
 
-     /*  */
-     article[class="organization-skills-showcase-component"] div :is(article) > p {
+    /*  */
+    article[class="organization-skills-showcase-component"] div :is(article)>p {
         max-width: 30em;
     }
 
@@ -80,7 +86,8 @@
     footer {
         min-height: 50em;
     }
-    footer > article[class="footer-component-content"] {
+
+    footer>article[class="footer-component-content"] {
         gap: 2em;
     }
 }
@@ -89,24 +96,29 @@
 /*  */
 /*  */
 @media all and (max-width: 768px) {
-    
-    nav > div[class="navigation-bar-component-wrapper"] ul {
+
+    nav>div[class="navigation-bar-component-wrapper"] ul {
         display: none;
     }
-    nav > div[class="navigation-bar-component-wrapper"] a[id="nav-bar-pricing-button-wrapper"] {
+
+    nav>div[class="navigation-bar-component-wrapper"] a[id="nav-bar-pricing-button-wrapper"] {
         display: none;
     }
-    nav > div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
+
+    nav>div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
         display: none;
-    } 
-    nav > div[class="navigation-bar-component-wrapper"] {
+    }
+
+    nav>div[class="navigation-bar-component-wrapper"] {
         justify-content: flex-end;
         align-items: center;
         gap: 6em;
     }
-    nav > div[class="navigation-bar-component-wrapper"] h1 {
+
+    nav>div[class="navigation-bar-component-wrapper"] h1 {
         font-size: 1.2em;
     }
+
     div[class="dd-menu"] :is(button[class="dd-menu-button"]) {
         width: 16em;
         display: flex;
@@ -115,20 +127,20 @@
     }
 
     /*  */
-    header > article[class="header-component-content-wrapper"] :is(h1) {
+    header>article[class="header-component-content-wrapper"] :is(h1) {
         font-size: 2.4em;
     }
-    header > article[class="header-component-content-wrapper"] :is(p) {
+
+    header>article[class="header-component-content-wrapper"] :is(p) {
         font-size: .8em;
-    } 
+    }
 
     /*  */
-    aside[class="organization-services-pricing-page-component-content"] 
-    div[class="pricing-tags-wrapper"] {
+    aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] {
         gap: 3em;
     }
-    aside[class="organization-services-pricing-page-component-content"] 
-    div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
+
+    aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
         left: 7em;
     }
 
@@ -136,9 +148,11 @@
     article[class="organization-experience-bar-component"] {
         gap: 1em;
     }
+
     article[class="organization-experience-bar-component"] span {
         font-size: 10em;
     }
+
     article[class="organization-experience-bar-component"] div[class="organization-experience-bar-component-content"] {
         align-items: flex-start;
         text-align: left;
@@ -149,12 +163,13 @@
         min-height: 15em;
         /* border: 1px solid red; */
     }
+
     article[class="testimonials-component"] div :is(article)::before {
         display: block;
     }
 
     /*  */
-    article[class="organization-skills-showcase-component"] div :is(article) > p {
+    article[class="organization-skills-showcase-component"] div :is(article)>p {
         max-width: 36em;
     }
 
@@ -162,7 +177,8 @@
     footer {
         min-height: 65em;
     }
-    footer > article[class="footer-component-content"] {
+
+    footer>article[class="footer-component-content"] {
         gap: 0em;
     }
 }
@@ -171,24 +187,29 @@
 /*  */
 /*  */
 @media all and (max-width: 425px) {
-    
-    nav > div[class="navigation-bar-component-wrapper"] ul {
+
+    nav>div[class="navigation-bar-component-wrapper"] ul {
         display: none;
     }
-    nav > div[class="navigation-bar-component-wrapper"] a[id="nav-bar-pricing-button-wrapper"] {
+
+    nav>div[class="navigation-bar-component-wrapper"] a[id="nav-bar-pricing-button-wrapper"] {
         display: none;
     }
-    nav > div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
+
+    nav>div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
         display: none;
-    } 
-    nav > div[class="navigation-bar-component-wrapper"] {
+    }
+
+    nav>div[class="navigation-bar-component-wrapper"] {
         justify-content: flex-end;
         align-items: center;
         gap: 4em;
     }
-    nav > div[class="navigation-bar-component-wrapper"] h1 {
+
+    nav>div[class="navigation-bar-component-wrapper"] h1 {
         font-size: 1.2em;
     }
+
     div[class="dd-menu"] :is(button[class="dd-menu-button"]) {
         width: 6em;
         display: flex;
@@ -197,20 +218,20 @@
     }
 
     /*  */
-    header > article[class="header-component-content-wrapper"] :is(h1) {
+    header>article[class="header-component-content-wrapper"] :is(h1) {
         font-size: 2em;
     }
-    header > article[class="header-component-content-wrapper"] :is(p) {
+
+    header>article[class="header-component-content-wrapper"] :is(p) {
         font-size: .8em;
-    } 
+    }
 
     /*  */
-    aside[class="organization-services-pricing-page-component-content"] 
-    div[class="pricing-tags-wrapper"] {
+    aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] {
         gap: 3em;
     }
-    aside[class="organization-services-pricing-page-component-content"] 
-    div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
+
+    aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
         left: 7em;
     }
 
@@ -218,9 +239,11 @@
     article[class="organization-experience-bar-component"] {
         gap: 1em;
     }
+
     article[class="organization-experience-bar-component"] span {
         font-size: 10em;
     }
+
     article[class="organization-experience-bar-component"] div[class="organization-experience-bar-component-content"] {
         align-items: center;
         text-align: center;
@@ -231,6 +254,7 @@
         min-height: 25em;
         /* border: 1px solid red; */
     }
+
     article[class="testimonials-component"] div :is(article)::before {
         display: none;
     }
@@ -239,7 +263,8 @@
     footer {
         min-height: 65em;
     }
-    footer > article[class="footer-component-content"] {
+
+    footer>article[class="footer-component-content"] {
         gap: 0em;
     }
 }
@@ -248,25 +273,30 @@
 /*  */
 /*  */
 @media all and (max-width: 375px) {
-    
-    nav > div[class="navigation-bar-component-wrapper"] ul {
+
+    nav>div[class="navigation-bar-component-wrapper"] ul {
         display: none;
     }
-    nav > div[class="navigation-bar-component-wrapper"] a[id="nav-bar-pricing-button-wrapper"] {
+
+    nav>div[class="navigation-bar-component-wrapper"] a[id="nav-bar-pricing-button-wrapper"] {
         display: none;
     }
-    nav > div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
+
+    nav>div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
         display: none;
-    } 
-    nav > div[class="navigation-bar-component-wrapper"] {
+    }
+
+    nav>div[class="navigation-bar-component-wrapper"] {
         justify-content: flex-end;
         align-items: center;
         gap: 0em;
         /* border: 1px solid red; */
     }
-    nav > div[class="navigation-bar-component-wrapper"] h1 {
+
+    nav>div[class="navigation-bar-component-wrapper"] h1 {
         font-size: 1.2em;
     }
+
     div[class="dd-menu"] :is(button[class="dd-menu-button"]) {
         width: 6.5em;
         display: flex;
@@ -276,20 +306,20 @@
     }
 
     /*  */
-    header > article[class="header-component-content-wrapper"] :is(h1) {
+    header>article[class="header-component-content-wrapper"] :is(h1) {
         font-size: 2em;
     }
-    header > article[class="header-component-content-wrapper"] :is(p) {
+
+    header>article[class="header-component-content-wrapper"] :is(p) {
         font-size: .8em;
-    } 
+    }
 
     /*  */
-    aside[class="organization-services-pricing-page-component-content"] 
-    div[class="pricing-tags-wrapper"] {
+    aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] {
         gap: 3em;
     }
-    aside[class="organization-services-pricing-page-component-content"] 
-    div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
+
+    aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
         left: 3.5em;
     }
 
@@ -297,9 +327,11 @@
     article[class="organization-experience-bar-component"] {
         gap: 1em;
     }
+
     article[class="organization-experience-bar-component"] span {
         font-size: 10em;
     }
+
     article[class="organization-experience-bar-component"] div[class="organization-experience-bar-component-content"] {
         align-items: center;
         text-align: center;
@@ -310,6 +342,7 @@
         min-height: 30em;
         /* border: 1px solid red; */
     }
+
     article[class="testimonials-component"] div :is(article)::before {
         display: none;
     }
@@ -318,7 +351,8 @@
     footer {
         min-height: 65em;
     }
-    footer > article[class="footer-component-content"] {
+
+    footer>article[class="footer-component-content"] {
         gap: 0em;
     }
 }
@@ -326,25 +360,30 @@
 /*  */
 /*  */
 @media all and (max-width: 320px) {
-    
-    nav > div[class="navigation-bar-component-wrapper"] ul {
+
+    nav>div[class="navigation-bar-component-wrapper"] ul {
         display: none;
     }
-    nav > div[class="navigation-bar-component-wrapper"] a[id="nav-bar-pricing-button-wrapper"] {
+
+    nav>div[class="navigation-bar-component-wrapper"] a[id="nav-bar-pricing-button-wrapper"] {
         display: none;
     }
-    nav > div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
+
+    nav>div[class="navigation-bar-component-wrapper"] :is(button[id="nav-bar-pricing-button"]) {
         display: none;
-    } 
-    nav > div[class="navigation-bar-component-wrapper"] {
+    }
+
+    nav>div[class="navigation-bar-component-wrapper"] {
         justify-content: flex-end;
         align-items: center;
         gap: 0em;
         /* border: 1px solid red; */
     }
-    nav > div[class="navigation-bar-component-wrapper"] h1 {
+
+    nav>div[class="navigation-bar-component-wrapper"] h1 {
         font-size: 1.2em;
     }
+
     div[class="dd-menu"] :is(button[class="dd-menu-button"]) {
         width: 4.8em;
         display: flex;
@@ -354,20 +393,20 @@
     }
 
     /*  */
-    header > article[class="header-component-content-wrapper"] :is(h1) {
+    header>article[class="header-component-content-wrapper"] :is(h1) {
         font-size: 2em;
     }
-    header > article[class="header-component-content-wrapper"] :is(p) {
+
+    header>article[class="header-component-content-wrapper"] :is(p) {
         font-size: .8em;
-    } 
+    }
 
     /*  */
-    aside[class="organization-services-pricing-page-component-content"] 
-    div[class="pricing-tags-wrapper"] {
+    aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] {
         gap: 3em;
     }
-    aside[class="organization-services-pricing-page-component-content"] 
-    div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
+
+    aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"])::before {
         left: 3.5em;
     }
 
@@ -375,9 +414,11 @@
     article[class="organization-experience-bar-component"] {
         gap: 1em;
     }
+
     article[class="organization-experience-bar-component"] span {
         font-size: 10em;
     }
+
     article[class="organization-experience-bar-component"] div[class="organization-experience-bar-component-content"] {
         align-items: center;
         text-align: center;
@@ -388,6 +429,7 @@
         min-height: 30em;
         /* border: 1px solid red; */
     }
+
     article[class="testimonials-component"] div :is(article)::before {
         display: none;
     }
@@ -396,7 +438,8 @@
     footer {
         min-height: 65em;
     }
-    footer > article[class="footer-component-content"] {
+
+    footer>article[class="footer-component-content"] {
         gap: 0em;
     }
 }
