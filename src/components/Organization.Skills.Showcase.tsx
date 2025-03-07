@@ -1,42 +1,28 @@
-import React from "react";
-import { RiDoubleQuotesL } from "react-icons/ri";
-import { RiDoubleQuotesR } from "react-icons/ri";
+import React, { useRef } from "react";
 
 const OrganizationSkillsShowcaseComponent: React.FC = () => {
+  const contentRef = useRef(
+    `We are determined to deliver the best results for your business
+                needs and requirements. Our team of experts are dedicated to
+                providing the best services to our clients and ensuring that they
+                are satisfied with the results. We have worked with over 45
+                clients and have deployed over 40 sites to deliver the best
+                results possible for their business needs and requirements.` as unknown as string
+  );
+
   return (
     <>
       <article className="organization-skills-showcase-component">
-        <h1>Why Choose Us</h1>
         <div className="content-wrapper">
           <article>
-            <h1>01</h1>
-            <p>
-              <RiDoubleQuotesL />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              dolorem cum, cumque itaque corporis omnis, aspernatur adipisci
-              voluptates aliquid ex dolore commodi impedit esse? Autem deleniti
-              dolores veniam nesciunt labore <RiDoubleQuotesR />
-            </p>
+            <h1>Why Choose Us</h1>
+            <p>{contentRef.current}</p>
           </article>
           <article>
-            <h1>02</h1>
-            <p>
-              <RiDoubleQuotesL />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              dolorem cum, cumque itaque corporis omnis, aspernatur adipisci
-              voluptates aliquid ex dolore commodi impedit esse? Autem deleniti
-              dolores veniam nesciunt labore <RiDoubleQuotesR />
-            </p>
-          </article>
-          <article>
-            <h1>03</h1>
-            <p>
-              <RiDoubleQuotesL />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              dolorem cum, cumque itaque corporis omnis, aspernatur adipisci
-              voluptates aliquid ex dolore commodi impedit esse? Autem deleniti
-              dolores veniam nesciunt labore <RiDoubleQuotesR />
-            </p>
+            <img
+              src="/photos/people-office-work-day_23-2150690145.jpg"
+              alt=""
+            />
           </article>
         </div>
       </article>

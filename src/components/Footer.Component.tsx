@@ -72,20 +72,9 @@ const FooterComponent: React.FC = () => {
               >
                 <li>Sponsors</li>
               </Link>
-              <Link
-                to={{
-                  pathname: "",
-                }}
-              >
+              <a href="/#about-organization">
                 <li>About</li>
-              </Link>
-              <Link
-                to={{
-                  pathname: "",
-                }}
-              >
-                <li>Terms & Registration</li>
-              </Link>
+              </a>
               <Link
                 to={{
                   pathname: "",
