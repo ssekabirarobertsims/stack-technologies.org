@@ -174,6 +174,11 @@
     }
 
     /*  */
+    aside[class="site-main-page-cookies-warning-component"] {
+        min-height: 21em;
+    }
+
+    /*  */
     footer {
         min-height: 65em;
     }
@@ -251,12 +256,17 @@
 
     /*  */
     article[class="testimonials-component"] div :is(article) {
-        min-height: 25em;
+        min-height: 23em;
         /* border: 1px solid red; */
     }
 
     article[class="testimonials-component"] div :is(article)::before {
         display: none;
+    }
+
+    /*  */
+    aside[class="site-main-page-cookies-warning-component"] {
+        min-height: 25em;
     }
 
     /*  */
@@ -339,12 +349,17 @@
 
     /*  */
     article[class="testimonials-component"] div :is(article) {
-        min-height: 30em;
+        min-height: 25em;
         /* border: 1px solid red; */
     }
 
     article[class="testimonials-component"] div :is(article)::before {
         display: none;
+    }
+
+    /*  */
+    aside[class="site-main-page-cookies-warning-component"] {
+        min-height: 26em;
     }
 
     /*  */
@@ -426,12 +441,17 @@
 
     /*  */
     article[class="testimonials-component"] div :is(article) {
-        min-height: 30em;
+        min-height: 25em;
         /* border: 1px solid red; */
     }
 
     article[class="testimonials-component"] div :is(article)::before {
         display: none;
+    }
+
+    /*  */
+    aside[class="site-main-page-cookies-warning-component"] {
+        min-height: 26em;
     }
 
     /*  */

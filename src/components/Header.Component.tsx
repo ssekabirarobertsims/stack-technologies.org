@@ -10,7 +10,7 @@ const HeaderComponent: React.FC = () => {
           <h1>
             We are committed to making our clients{" "}
             <strong className="xtz">ideas</strong> and{" "}
-            <strong className="xtz">dreams</strong> come to life.
+            <strong className="xtz">dreams</strong> come to life. <strong className="xtz">Whats</strong> your idea & dream ?
           </h1>
           <p>
             Need of a website and you are uncertain of how to proceed, look no

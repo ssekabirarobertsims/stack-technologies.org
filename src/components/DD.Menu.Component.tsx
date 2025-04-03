@@ -54,13 +54,23 @@ const DropDownMenuComponent: React.FunctionComponent = () => {
 
   return (
     <>
-      <div className="dd-menu">
+      <div className="dd-menu" onClick={(event) => {
+        if(event.currentTarget.matches(".close-menu-button")) {
+          console.log("te")
+        }
+      }}>
         <button
           type="button"
           className="dd-menu-button"
-          onClick={OpenDropDownMenu}
+          onClick={(event) => {
+            event.stopPropagation();
+            OpenDropDownMenu();
+          }}
         >
-          <BiMenu />
+          <BiMenu onClick={(event) => {
+            event.stopPropagation();
+            OpenDropDownMenu();
+          }} className="sample" />
         </button>
         <aside className="dd-menu-wrapper">
           <article className="dd-menu-content">
@@ -72,7 +82,7 @@ const DropDownMenuComponent: React.FunctionComponent = () => {
                   </a>
                 ))}
               </ul>
-              <button type="button" onClick={CloseDropDownMenu} ref={buttonRef}>
+              <button type="button" onClick={CloseDropDownMenu} ref={buttonRef} className="close-menu-button">
                 Close Menu
               </button>
             </div>

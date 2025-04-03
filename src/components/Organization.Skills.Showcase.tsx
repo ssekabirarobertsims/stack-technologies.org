@@ -20,7 +20,7 @@ const OrganizationSkillsShowcaseComponent: React.FC = () => {
           </article>
           <article>
             <img
-              src="/photos/people-office-work-day_23-2150690145.jpg"
+              src="/photos/people-office-work-day_23-2150690127.jpg"
               alt=""
             />
           </article>
