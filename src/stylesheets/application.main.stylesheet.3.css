@@ -11,7 +11,7 @@
     top: 0px;
     left: 0px;
     /* border: 1px solid red; */
-    z-index: 2;
+    z-index: 10;
 }
 
 .spinner {
@@ -247,7 +247,7 @@ article[class="testimonials-component"] div :is(article)::before {
     width: 37em;
     border: 1px solid hsl(0, 0%, 90%);
     position: absolute;
-    top: -2em;
+    top: -1em;
     right: -1em;
     z-index: -1;
     border-bottom: none;
@@ -491,7 +491,6 @@ div[class="dd-menu"] aside[class="dd-menu-wrapper"] {
     top: 0px;
     right: 0px;
     overflow: hidden;
-    /* border: 1px solid red; */
 }
 
 div[class="dd-menu"] aside[class="dd-menu-wrapper"]> :is(article[class="dd-menu-content"]) {
@@ -646,4 +645,74 @@ article[class="about-organization-component"]>div[class="about-organization-comp
     cursor: pointer;
     transform: rotate(1deg);
     scale: 1.1;
+}
+
+/*  */
+aside[class="site-main-page-cookies-warning-component"] {
+    min-height: 18em;
+    width: min(100%, 100%);
+    background-color: var(--universal-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #fff;
+    border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+aside[class="site-main-page-cookies-warning-component"]>article {
+    min-height: 16em;
+    width: min(90%, 90%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    color: var(--universal-primary-font-color);
+    gap: .8em;
+}
+
+aside[class="site-main-page-cookies-warning-component"]>article :is(h1) {
+    font-size: 3em;
+}
+
+aside[class="site-main-page-cookies-warning-component"]>article :is(h2) {
+    font-size: 1.3em;
+    font-weight: normal;
+    font-style: normal;
+}
+
+aside[class="site-main-page-cookies-warning-component"]>article :is(p) {
+    font-size: .9em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+
+aside[class="site-main-page-cookies-warning-component"]>article :is(div) {
+    min-height: 4em;
+    width: min(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-flow: row wrap;
+    /* border: 1px solid red; */
+    gap: .5em;
+}
+
+aside[class="site-main-page-cookies-warning-component"]>article :is(div) button {
+    height: 3em;
+    width: min(100%, 10em);
+    border: none !important;
+    border-radius: .4em;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
 }

@@ -6,6 +6,7 @@ import LoaderComponent from "../components/Loader.Component";
 import RemoveLoader from "../functions/Remove.Loader.Component.Function";
 import { useEffect } from "react";
 import SiteDeveloperNavigationComponent from "../components/Developer.Navigation.Div.Component";
+import CookiesWarningComponent from "../components/Cookies.Warning.Component";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <NavigationBarComponent />
+      <CookiesWarningComponent />
       <HeaderComponent />
       <LoaderComponent />
       <SiteDeveloperNavigationComponent />

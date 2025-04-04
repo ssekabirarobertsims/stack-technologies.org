@@ -10,7 +10,7 @@ const OrganizationDevelopersComponent: React.FC = () => {
         id="organization-developers-team"
       >
         <div className="organization-developers-section-component-content-wrapper">
-          <h1>Meet The Team</h1>
+          <h1>Top Team Members</h1>
           <br />
           <div className="developers-cards-wrapper">
             <article>
@@ -42,7 +42,7 @@ const OrganizationDevelopersComponent: React.FC = () => {
                   <p>Software Engineer</p>
                   <ul>
                     <a
-                      href="https://www.github.com/testgithubrobert"
+                      href="https://github.com/ssekabirarobertsims"
                       target="_blank"
                     >
                       <li>

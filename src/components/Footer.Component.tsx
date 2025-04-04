@@ -23,7 +23,7 @@ const FooterComponent: React.FC = () => {
       <footer className="footer-component" id="organization-legal-information">
         <article className="footer-component-content">
           <article className="footer-component-content-wrapper">
-            <h1>About Us</h1>
+            <h1>Details</h1>
             <p>
               We specialize in building high-quality websites, web apps, and
               digital solutions to help businesses thrive online. We also handle
@@ -91,7 +91,7 @@ const FooterComponent: React.FC = () => {
                 <IoLocation /> Kampala, Uganda
               </li>
               <li>
-                <MdAddCall /> + 256 726 930 366
+                <MdAddCall /> + 256 759 714 4193
               </li>
               <li>
                 <MdOutlineEmail /> support@gmail.com
