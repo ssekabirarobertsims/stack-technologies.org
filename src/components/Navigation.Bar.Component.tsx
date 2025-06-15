@@ -60,8 +60,9 @@ const NavigationBarComponent: React.FC = () => {
             to={{
               pathname: "/",
             }}
+            id="logo"
           >
-            <h1>StackTechnologies</h1>
+            stack tech
           </Link>
           <ul className="" id="" ref={ulRef}>
             {list.map((element: ListItem) => (

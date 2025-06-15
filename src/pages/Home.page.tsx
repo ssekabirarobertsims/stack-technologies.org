@@ -9,6 +9,10 @@ import SiteDeveloperNavigationComponent from "../components/Developer.Navigation
 import CookiesWarningComponent from "../components/Cookies.Warning.Component";
 
 const HomePage: React.FC = () => {
+   useEffect(() => {
+      document.title = "Home - Main Page";
+    }, []);
+
   useEffect(() => {
     RemoveLoader();
   }, []);

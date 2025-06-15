@@ -7,7 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 const AboutOrganizationComponent: React.FC = () => {
   const photoRef = useRef(null);
 
-  const contentRef = useRef(
+  const contentRef = useRef<string>(
     `We are a team of developers who are passionate about creating
             software solutions that are tailored to meet the needs of our
             clients. We have a team of developers who are experienced in
