@@ -99,7 +99,7 @@ input {
 
 /*  */
 nav {
-    min-height: 5em;
+    min-height: 4.5em;
     width: min(100%, 100%);
     display: flex;
     align-items: center;
@@ -119,7 +119,7 @@ nav {
 }
 
 nav>div[class="navigation-bar-component-wrapper"] {
-    min-height: 5em;
+    min-height: 3.5em;
     width: min(90%, 90%);
     display: flex;
     align-items: center;
@@ -130,9 +130,11 @@ nav>div[class="navigation-bar-component-wrapper"] {
     /* border: 1px solid red; */
 }
 
-nav>div[class="navigation-bar-component-wrapper"] a {
+nav>div[class="navigation-bar-component-wrapper"] a[id="logo"] {
     text-decoration: none;
     text-decoration-color: none;
+    font-weight: calc(290 + 290);
+    font-size: 1.2em;
 }
 
 nav>div[class="navigation-bar-component-wrapper"] h1 {
@@ -142,7 +144,7 @@ nav>div[class="navigation-bar-component-wrapper"] h1 {
 }
 
 nav>div[class="navigation-bar-component-wrapper"] ul {
-    min-height: 5em;
+    min-height: 3.5em;
     width: min(80%, 40em);
     display: flex;
     align-items: center;
@@ -232,14 +234,14 @@ header>article[class="header-component-content-wrapper"] :is(h1) {
 }
 
 header>article[class="header-component-content-wrapper"] :is(p) {
-    font-size: .9em;
-    font-weight: calc(200 + 200);
+    font-size: 1em;
+    font-weight: calc(250 + 250);
     color: hsl(0, 0%, 100%);
     max-width: 46em;
 }
 
 header>article[class="header-component-content-wrapper"] :is(button) {
-    height: 4em;
+    height: 3.5em;
     width: 15em;
     border: none;
     border-radius: .2em;
@@ -369,7 +371,7 @@ article[class="organization-experience-bar-component"] div[id="progress-count"] 
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid hsl(0, 0%, 96%);
+    border: 1px solid hsl(0, 0%, 95%);
     flex-grow: 1;
 }
 
@@ -829,7 +831,7 @@ footer>article[class="footer-component-content"] article .socials {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 1.5em;
     list-style-type: none;
 }
 
@@ -842,7 +844,7 @@ footer>article[class="footer-component-content"] article .links {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: .5em;
+    gap: .8em;
     list-style-type: none;
     flex-direction: column;
 }

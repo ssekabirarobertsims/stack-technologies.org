@@ -1,4 +1,5 @@
 import HomePage from "./pages/Home.page";
+import NotFoundPage from "./pages/404";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -7,11 +8,12 @@ function App() {
     console.log("Dom Content Loaded!")
   });
 
-  return (
+  return ( // add cookies policy
     <Routes>
-      <Route index element={<HomePage />}></Route>
-      <Route path="/" element={<HomePage />}></Route>
-      <Route path="/organization" element={<HomePage />}></Route>
+      <Route index element={<HomePage />} />
+      <Route path="/" element={<HomePage />} />
+      <Route path="/organization" element={<HomePage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }

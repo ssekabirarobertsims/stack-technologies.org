@@ -14,7 +14,7 @@ const OrganizationDevelopersComponent: React.FC = () => {
           <br />
           <div className="developers-cards-wrapper">
             <article>
-              <img src="/photos/dev-1.jpg" alt="" />
+              <img src="/photos/lisa-roberts.avif" alt="" />
               <aside>
                 <div className="wrapper">
                   <h1>Lisa Roberts</h1>

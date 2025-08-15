@@ -29,7 +29,7 @@ const FooterComponent: React.FC = () => {
               digital solutions to help businesses thrive online. We also handle
               database management and backend development for backend services
               and secure web APIs. Site developed with <BiHeart /> by{" "}
-              <a href="https://robertsims.netlify.app/" target="_blank">
+              <a href="https://ssekabirarobertsims.netlify.app/" target="_blank">
                 ssekabira robert sims
               </a>{" "}
               and the team at stack technologies organization.

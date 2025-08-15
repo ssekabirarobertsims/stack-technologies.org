@@ -371,7 +371,7 @@ article[class="organization-ratings-component"]>div[class="organization-ratings-
 article[class="organization-ratings-component"]>div[class="organization-ratings-component-content"] span {
     font-size: 1.3em;
     font-weight: bold;
-    color: hsl(0, 0%, 20%);
+    color: var(--primary-color);
     line-height: 1.1em;
     text-align: center;
     max-width: 30em;
@@ -529,13 +529,14 @@ aside[class="organization-services-pricing-page-component-content"] div[class="p
     flex-direction: row;
     flex-flow: row wrap;
     /* border: 1px solid red; */
-    gap: 1em;
+    gap: 2em;
     flex-grow: 1;
 }
 
 aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]) {
     min-height: 70vh;
-    width: min(100%, 24em);
+    width: min(100%, 22em);
+    max-width: 22em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -543,6 +544,11 @@ aside[class="organization-services-pricing-page-component-content"] div[class="p
     border: 1px solid var(--primary-color);
     gap: 1em;
     border-radius: .5em;
+    flex-grow: 1
+}
+
+aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[class="pricing-tag"]):is(:focus, :active, :hover) {
+   transform: scale(1.1);
 }
 
 aside[class="organization-services-pricing-page-component-content"] div[class="pricing-tags-wrapper"] :where(article[id="middle-pricing-tag"]) {
@@ -606,7 +612,7 @@ aside[class="organization-services-pricing-page-component-content"] div[class="p
     text-decoration: none;
     list-style-type: none;
     list-style: none;
-    font-weight: normal;
+    font-weight: calc(250 + 250);
     font-style: normal;
     color: hsl(0, 0%, 20%);
 }
